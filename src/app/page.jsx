@@ -149,7 +149,7 @@ We begin by carefully analyzing our customers' textile needs to craft products t
 
 export const metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'We are Tricots Melbouci.',
 }
 
 export default async function Home() {
