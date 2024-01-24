@@ -92,14 +92,14 @@ function CaseStudies({ caseStudies }) {
 }
 
 const clients = [
-  ['Joseph', logoPhobia],
-  ['Sophie', logoFamilyFund],
-  ['Marie', logoUnseal],
-  ['France', logoMailSmirk],
-  ['Jonathan', logoHomeWork],
-  ['Farah', logoGreenLife],
-  ['Elyes', logoBrightPath],
-  ['Lilya', logoNorthAdventures],
+    ['Phobia', logoPhobia],
+    ['Family Fund', logoFamilyFund],
+    ['Unseal', logoUnseal],
+    ['Mail Smirk', logoMailSmirk],
+    ['Home Work', logoHomeWork],
+    ['Green Life', logoGreenLife],
+    ['Bright Path', logoBrightPath],
+    ['North Adventures', logoNorthAdventures],
 ]
 
 function Clients() {
