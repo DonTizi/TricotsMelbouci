@@ -9,9 +9,9 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
+      { title: 'Custom Design', href: '/work/family-fund' },
+      { title: 'Fabric Sourcing', href: '/work/unseal' },
+      { title: 'Consultation', href: '/work/phobia' },
       {
         title: (
           <>
@@ -125,7 +125,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © Tricots Melbouci Inc. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

@@ -25,7 +25,7 @@ function CaseStudies({ caseStudies }) {
     <Container className="mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          Case studies
+          Our Products
         </h2>
       </FadeIn>
       <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
@@ -70,7 +70,7 @@ function CaseStudies({ caseStudies }) {
                       href={caseStudy.href}
                       aria-label={`Read case study: ${caseStudy.client}`}
                     >
-                      Read case study
+                      Read more
                     </Button>
                   </div>
                   {caseStudy.testimonial && (
@@ -91,16 +91,16 @@ function CaseStudies({ caseStudies }) {
   )
 }
 
-const clients = [
-    ['Phobia', logoPhobia],
-    ['Family Fund', logoFamilyFund],
-    ['Unseal', logoUnseal],
-    ['Mail Smirk', logoMailSmirk],
-    ['Home Work', logoHomeWork],
-    ['Green Life', logoGreenLife],
-    ['Bright Path', logoBrightPath],
-    ['North Adventures', logoNorthAdventures],
-]
+  const clients = [
+      ['Phobia', logoPhobia],
+      ['Family Fund', logoFamilyFund],
+      ['Unseal', logoUnseal],
+      ['Mail Smirk', logoMailSmirk],
+      ['Home Work', logoHomeWork],
+      ['Green Life', logoGreenLife],
+      ['Bright Path', logoBrightPath],
+      ['North Adventures', logoNorthAdventures],
+  ]
 
 function Clients() {
   return (
@@ -134,7 +134,7 @@ function Clients() {
 export const metadata = {
   title: 'Our Work',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Tricots Melbouci specializes in crafting high-quality traditional knitwear in Montreal, utilizing artisanal techniques and local materials. We offer personalized design services and fabric consultations. Additionally, our workshop is equipped for continuous and large-scale production, ensuring both quality and quantity in our offerings.',
 }
 
 export default async function Work() {
@@ -144,12 +144,10 @@ export default async function Work() {
     <>
       <PageIntro
         eyebrow="Our work"
-        title="Proven solutions for real-world problems."
+        title="Workshop"
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+        Tricots Melbouci specializes in crafting high-quality traditional knitwear in Montreal, utilizing artisanal techniques and local materials. We offer personalized design services and fabric consultations. Additionally, our workshop is equipped for continuous and large-scale production, ensuring both quality and quantity in our offerings.
         </p>
       </PageIntro>
 

@@ -45,27 +45,14 @@ function Section({ title, image, children }) {
 
 function Discover() {
   return (
-    <Section title="Discover" image={{ src: imageWhiteboard }}>
+    <Section title="Conceptualization and Design" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          At Tricots Melbouci, each project begins with a thorough conceptualization phase. Our talented artisans work closely with clients to understand their vision and preferences. Drawing upon our rich tradition in knit textile craftsmanship, we craft exclusive textile designs that transform your concepts into tangible realities. 
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
-        </p>
-        <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+        This initial stage is where creativity meets our expertise to lay the foundation for unique and personalized textile products.
         </p>
       </div>
 
@@ -73,12 +60,12 @@ function Discover() {
         Included in this phase
       </h3>
       <TagList className="mt-4">
-        <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>Custom Knit Design</TagListItem>
+        <TagListItem>Artisanal Textile Creativity</TagListItem>
+        <TagListItem>Personalized Knitting Projects</TagListItem>
+        <TagListItem>Traditional Knit Craftsmanship</TagListItem>
+        <TagListItem>Creative Textile Conceptualization</TagListItem>
+        <TagListItem>Bespoke Knitwear Designing</TagListItem>
       </TagList>
     </Section>
   )
@@ -86,70 +73,44 @@ function Discover() {
 
 function Build() {
   return (
-    <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Fabric Sourcing and Selection" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+        The heart of our process is the meticulous sourcing of fabrics. We navigate the complexities of finding the ideal fabric for each project, leveraging our extensive network of yarn suppliers and advanced machinery. 
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
-        </p>
-        <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+        Our commitment to quality drives us to source the finest materials, ensuring each fabric aligns perfectly with the project's requirements and our dedication to artisanal excellence.
         </p>
       </div>
 
       <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
+        author={{ name: 'Houria Cheurfi', role: 'CEO of Tricots Melbouci' }}
         className="mt-12"
       >
-        Studio were so regular with their progress updates we almost began to
+        T&M were so regular with their progress updates we almost began to
         think they were automated!
       </Blockquote>
+      <TagList className="mt-4">
+        <TagListItem>Quality Fabric Sourcing</TagListItem>
+        <TagListItem>Artisanal Fabric Selection</TagListItem>
+        <TagListItem>Premium Yarn Suppliers</TagListItem>
+        <TagListItem>Textile Material Excellence</TagListItem>
+        <TagListItem>Custom Fabric Matching</TagListItem>
+        <TagListItem>Sustainable Fabric Procurement</TagListItem>
+      </TagList>
     </Section>
   )
 }
 
 function Deliver() {
   return (
-    <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Material Consultation and Guidance" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+        Understanding the intricacies of textile design can be challenging. That's where our material consultation service comes into play. Our experienced team offers personalized consultations to help you make informed decisions about materials and design approaches. 
         </p>
         <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-neutral-950">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on Twitter.
-        </p>
-        <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
+        We provide expert advice and guidance, ensuring your textile project is not only visually stunning but also functionally superior.
         </p>
       </div>
 
@@ -157,15 +118,15 @@ function Deliver() {
         Included in this phase
       </h3>
       <List className="mt-8">
-        <ListItem title="Testing">
+        <ListItem title="Personalized Material Guidance">
           Our projects always have 100% test coverage, which would be impressive
           if our tests weren’t as porous as a sieve.
         </ListItem>
-        <ListItem title="Infrastructure">
+        <ListItem title="Knitting Project Consultancy">
           To ensure reliability we only use the best Digital Ocean droplets that
           $4 a month can buy.
         </ListItem>
-        <ListItem title="Support">
+        <ListItem title="Artisanal Textile Solutions">
           Because we hold the API keys for every critical service your business
           uses, you can expect a lifetime of support, and invoices, from us.
         </ListItem>
@@ -189,20 +150,14 @@ function Values() {
         title="Balancing reliability and innovation"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+        we masterfully balance reliability and innovation, ensuring each piece of knitwear reflects our enduring commitment to dependable quality while embracing forward-thinking designs.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
-          </GridListItem>
+          Emphasizing precision in every detail, from materials to the final product.          </GridListItem>
           <GridListItem title="Efficient">
             We pride ourselves on never missing a deadline which is easy because
             most of the work was done years ago.
@@ -232,7 +187,7 @@ function Values() {
 export const metadata = {
   title: 'Our Process',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'We approaches each creation with a mindset of blending innovation and tradition, focusing on meticulous craftsmanship and a deep passion for sustainable, high-quality knitwear.',
 }
 
 export default function Process() {
@@ -240,9 +195,7 @@ export default function Process() {
     <>
       <PageIntro eyebrow="Our process" title="How we work">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+        We approaches each creation with a mindset of blending innovation and tradition, focusing on meticulous craftsmanship and a deep passion for sustainable, high-quality knitwear.
         </p>
       </PageIntro>
 

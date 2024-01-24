@@ -38,16 +38,13 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+          Our dedication to loyalty is reflected in our enduring relationships with clients and partners, built on a foundation of trust and a shared passion for quality craftsmanship in textile art.
           </GridListItem>
           <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+          Trust is at the core of everything we do, fostering a culture of reliability and integrity that resonates through our authentic, high-quality textile creations
           </GridListItem>
           <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+          In every stitch and pattern, we embodies compassion, crafting each piece with an understanding of our customers' desires and a deep respect for the artisanal textile tradition.
           </GridListItem>
         </GridList>
       </Container>
@@ -60,19 +57,9 @@ const team = [
     title: 'Leadership',
     people: [
       {
-        name: 'Leslie Alexander',
+        name: 'Houria Melbouci',
         role: 'Co-Founder / CEO',
         image: { src: imageLeslieAlexander },
-      },
-      {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        image: { src: imageMichaelFoster },
-      },
-      {
-        name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
-        image: { src: imageDriesVincent },
       },
     ],
   },
@@ -80,50 +67,26 @@ const team = [
     title: 'Team',
     people: [
       {
-        name: 'Chelsea Hagon',
-        role: 'Senior Developer',
+        name: 'Farah Melbouci',
+        role: 'Designer',
         image: { src: imageChelseaHagon },
       },
       {
-        name: 'Emma Dorsey',
-        role: 'Senior Designer',
+        name: 'Lilya Melbouci',
+        role: 'Administration/Designer',
         image: { src: imageEmmaDorsey },
       },
       {
-        name: 'Leonard Krasner',
-        role: 'VP, User Experience',
+        name: 'Elyes Rayane Melbouci',
+        role: 'Software Engineer',
         image: { src: imageLeonardKrasner },
       },
       {
-        name: 'Blake Reid',
-        role: 'Junior Copywriter',
+        name: 'Amine Melbouci',
+        role: 'Electrical Engineer',
         image: { src: imageBlakeReid },
       },
-      {
-        name: 'Kathryn Murphy',
-        role: 'VP, Human Resources',
-        image: { src: imageKathrynMurphy },
-      },
-      {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
-        image: { src: imageWhitneyFrancis },
-      },
-      {
-        name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
-        image: { src: imageJeffreyWebb },
-      },
-      {
-        name: 'Benjamin Russel',
-        role: 'Senior Developer',
-        image: { src: imageBenjaminRussel },
-      },
-      {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
-        image: { src: imageAngelaFisher },
-      },
+
     ],
   },
 ]
@@ -180,7 +143,7 @@ function Team() {
 export const metadata = {
   title: 'About Us',
   description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+    'our strength lies in collaboration, uniting diverse skills and ideas to craft exceptional knitwear that stands at the crossroads of creativity and artisanal excellence.',
 }
 
 export default async function About() {
@@ -188,31 +151,21 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About us" title="A Century Legacy of Textile">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
-        </p>
+        As the proud successor of Tricots Capraro, a name synonymous with textile craftsmanship for nearly a century, Tricots Melbouci, led by Houria Melbouci, embodies the true spirit of a family-run enterprise.         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
-          </p>
+          Our commitment at Tricots Melbouci is to produce high-quality, locally-made knitwear, combining the principles of sustainability and efficiency.           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
-          </p>
+          Upholding a rich heritage, we at Tricots Melbouci seamlessly blend traditional expertise with a modern approach to meet contemporary textile needs.          </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="5" label="Members" />
+          <StatListItem value="+25" label="clients" />
+          <StatListItem value="+200k" label="Transactions" />
         </StatList>
       </Container>
 
@@ -223,7 +176,7 @@ export default async function About() {
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
+        intro="Have a look on our blog, where we weave together stories of artistry, innovation, and the timeless beauty of knitwear, reflecting the essence of our passion for textile craftsmanship."
         pages={blogArticles}
       />
 
