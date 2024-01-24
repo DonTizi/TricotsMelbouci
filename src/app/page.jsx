@@ -67,9 +67,10 @@ function CaseStudies({ caseStudies }) {
         title="Learn about our products."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-        Discover our range of services that cater to all your textile design needs. From custom-made designs to fabric sourcing, we offer a variety of services to help bring your vision to life. Explore our services below to learn more.
-        </p>
+<p>
+  {"Discover our range of services that cater to all your textile design needs. From custom-made designs to fabric sourcing, we offer a variety of services to help bring your vision to life. Explore our services below to learn more."}
+</p>
+
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -109,10 +110,10 @@ function Services() {
         title="We help you identify, explore and product to new Models."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          As long as those opportunities involve giving us ressources and passion.
-        
-        </p>
+<p>
+  {"As long as those opportunities involve giving us resources and passion."}
+</p>
+
       </SectionIntro>
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
