@@ -37,7 +37,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with Dozens of amazing people
+            We’ve worked with Dozens of amazing people, A REVOIR CETTE PARTIE LA JE DOIS METTRE LES COMPAGNIES AVEC LESQUELLES ON A TRAVAILLER
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -49,7 +49,6 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
                 </FadeIn>
               </li>
             ))}
@@ -149,7 +148,7 @@ We begin by carefully analyzing our customers' textile needs to craft products t
 
 export const metadata = {
   description:
-    'We are Tricots Melbouci.',
+    'We are Tricots',
 }
 
 export default async function Home() {
