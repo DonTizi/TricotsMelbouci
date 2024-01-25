@@ -19,6 +19,10 @@ import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
+import { Button } from '@/components/Button'
+
+
+
 
 const clients = [
   ['Joseph', logoPhobiaLight],
@@ -100,6 +104,108 @@ function CaseStudies({ caseStudies }) {
     </>
   )
 }
+/*
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+*/  
+function Collection() {
+  return (
+    <FadeIn className="bg-gray-50"> {/* Ajouter l'effet de fondu ici */}
+    <div className="bg-gray-50">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <div className="sm:flex sm:items-baseline sm:justify-between">
+          <h2 className="text-2xl font-mona-sans tracking-tight text-gray-900">Our Gallery</h2>
+          <Button href="/gallery">View Collection</Button>
+        </div>
+
+        <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
+          <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
+            <img
+              src="https://i.postimg.cc/W1cwCc1b/bleu.jpg"
+              alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
+              className="object-cover object-center group-hover:opacity-75"
+            />
+            <div aria-hidden="true" className="bg-gradient-to-b from-transparent to-black opacity-50" />
+            <div className="flex items-end p-6">
+              <div>
+                <h3 className="font-mona-sans text-white">
+                  <a href="/gallery">
+                    <span className="absolute inset-0 " />
+                    New Arrivals
+                  </a>
+                </h3>
+
+              </div>
+            </div>
+          </div>
+          <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full">
+            <img
+              src="https://i.postimg.cc/3JmcdByN/Screenshot-2024-01-24-at-9-32-17-PM.png"
+              alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters."
+              className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full"
+            />
+            <div
+              aria-hidden="true"
+              className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"
+            />
+            <div className="flex items-end p-6 sm:absolute sm:inset-0">
+              <div>
+                <h3 className="font-mona-sans text-white">
+                  <a href="/gallery">
+                    <span className="absolute inset-0 " />
+                    Accessories
+                  </a>
+                </h3>
+
+              </div>
+            </div>
+          </div>
+          <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full">
+            <img
+              src="https://i.postimg.cc/DzZ6ddzq/Screenshot-2024-01-24-at-9-31-49-PM.png"
+              alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk."
+              className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full"
+            />
+            <div
+              aria-hidden="true"
+              className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"
+            />
+            <div className="flex items-end p-6 sm:absolute sm:inset-0">
+              <div>
+                <h3 className="font-mona-sans text-white">
+                  <a href="/gallery">
+                    <span className="absolute inset-0 " />
+                    Wool Sweaters
+                  </a>
+                </h3>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    </FadeIn> 
+
+  )
+}
+
+
+
+
+
 
 function Services() {
   return (
@@ -179,6 +285,7 @@ export default async function Home() {
         finding a way to access the user’s microphone without triggering one of
         those annoying permission dialogs.
       </Testimonial>
+      <Collection />
 
       <Services />
 
