@@ -125,7 +125,7 @@ function Collection() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="sm:flex sm:items-baseline sm:justify-between">
           <h2 className="text-2xl font-mona-sans tracking-tight text-gray-900">Our Gallery</h2>
-          <Button href="/gallery">View Collection</Button>
+          <Button><Link href="/gallery">View Collection</Link></Button>
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
@@ -139,10 +139,10 @@ function Collection() {
             <div className="flex items-end p-6">
               <div>
                 <h3 className="font-mona-sans text-white">
-                  <a href="/gallery">
+                <Link href="/gallery">
                     <span className="absolute inset-0 " />
                     New Arrivals
-                  </a>
+               </Link>
                 </h3>
 
               </div>
@@ -161,10 +161,10 @@ function Collection() {
             <div className="flex items-end p-6 sm:absolute sm:inset-0">
               <div>
                 <h3 className="font-mona-sans text-white">
-                  <a href="/gallery">
+                <Link href="/gallery">
                     <span className="absolute inset-0 " />
                     Accessories
-                  </a>
+                    </Link>
                 </h3>
 
               </div>
@@ -183,10 +183,10 @@ function Collection() {
             <div className="flex items-end p-6 sm:absolute sm:inset-0">
               <div>
                 <h3 className="font-mona-sans text-white">
-                  <a href="/gallery">
+                  <Link href="/gallery">
                     <span className="absolute inset-0 " />
                     Wool Sweaters
-                  </a>
+                    </Link>
                 </h3>
 
               </div>
