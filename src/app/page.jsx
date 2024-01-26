@@ -120,12 +120,11 @@ function CaseStudies({ caseStudies }) {
 */  
 function Collection() {
   return (
-    <FadeIn className="bg-gray-50"> {/* Ajouter l'effet de fondu ici */}
-    <div className="bg-gray-50">
+    <FadeIn className=""> {/* Ajouter l'effet de fondu ici */}
+    <div className=''>
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="sm:flex sm:items-baseline sm:justify-between">
           <h2 className="text-2xl font-mona-sans tracking-tight text-gray-900">Our Gallery</h2>
-          <Button><Link href="/gallery">View Collection</Link></Button>
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
