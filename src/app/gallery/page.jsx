@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
@@ -14,7 +13,7 @@ function MyApp({ Component, pageProps }) {
       > </SectionIntro>
       
       </Container >
-      <Container className="w-full">
+      <Container className="w-full h-full">
         <ScrollImg/>
       </Container>
       </FadeIn>
@@ -24,6 +23,8 @@ function MyApp({ Component, pageProps }) {
 
 export default function Homepage(){
   return(
+    <div className="w-full h-full">
     <MyApp/>
+    </div>
   )
 };

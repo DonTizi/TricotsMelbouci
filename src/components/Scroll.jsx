@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import * as THREE from "three";
 import { Suspense, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
@@ -26,15 +26,13 @@ function Image(props) {
 
 function Page({ m = 0.4, urls, ...props }) {
   const { width } = useThree((state) => state.viewport);
-  const w = width < 10 ? 1.5 / 3 : 1 / 3; // Ajustez cette ligne pour changer la largeur
-  const imageWidth = width * w - m * 2; // Calcul de la largeur de l'image
-  const imageHeight = 5; // Hauteur fixe, ajustez selon les besoins
-
+  const pageWidth = width; // Assurez-vous que ceci correspond à la largeur réelle de vos pages
+  const w = width < 10 ? 1.5 / 3 : 1 / 3;
   return (
     <group {...props}>
-     <Image position={[-width * w, 0, -1]} scale={[imageWidth, imageHeight, 1]} url={urls[0]} />
-      <Image position={[0, 0, 0]} scale={[imageWidth, imageHeight, 1]} url={urls[1]} />
-      <Image position={[width * w, 0, 1]} scale={[imageWidth, imageHeight, 1]} url={urls[2]} />
+      <Image position={[-width * w, 0, -1]} scale={[width * w - m * 2, 5, 1]} url={urls[0]} />
+      <Image position={[0, 0, 0]} scale={[width * w - m * 2, 5, 1]} url={urls[1]} />
+      <Image position={[width * w, 0, 1]} scale={[width * w - m * 2, 5, 1]} url={urls[2]} />
     </group>
   );
 }
@@ -48,10 +46,10 @@ function Pages() {
     <Page position={[width * 1, 0, 0]} urls={["7.jpg", "8.jpg", "9.jpg"]} />
     <Page position={[width * 2, 0, 0]} urls={["10.jpg", "11.jpg", "12.jpg"]} />
     <Page position={[width * 3, 0, 0]} urls={["13.jpg", "14.jpg", "15.jpg"]} />
-
     <Page position={[width * 4, 0, 0]} urls={["16.jpg", "17.jpg", "18.jpg"]} />
   
     </>
+
   );
 }
 
@@ -71,11 +69,13 @@ function Loader() {
 export function ScrollImg() {
   return (
     <>
+<div className="h-screen w-full max-w-screen-lg mx-auto">
+
       <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
         <Loader />
         <Suspense fallback={null}>
           <ScrollControls infinite horizontal damping={4} pages={6} distance={1}>
-            <Scroll>
+            <Scroll >
               <Pages />
             </Scroll>
             <Scroll html>
@@ -95,6 +95,7 @@ export function ScrollImg() {
           <Preload />
         </Suspense>
       </Canvas>
+      </div>
     </>
   );
 }
