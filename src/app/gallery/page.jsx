@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <FadeIn>
 
     <Container>
-      <SectionIntro title="Please Scroll to View Gallery"
+      <SectionIntro title="Our Gallery"
         className="mt-24 sm:mt-32 lg:mt-40"
       > </SectionIntro>
       
