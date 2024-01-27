@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -20,48 +21,11 @@ import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 import { Button } from '@/components/Button'
+import {Clients} from '@/components/Clients'
 
 
 
 
-const clients = [
-  ['Joseph', logoPhobiaLight],
-  ['Sophie', logoFamilyFund],
-  ['Marie', logoUnseal],
-  ['France', logoMailSmirk],
-  ['Jonathan', logoHomeWork],
-  ['Farah', logoGreenLife],
-  ['Elyes', logoBrightPath],
-  ['Lilya', logoNorthAdventures],
-]
-
-function Clients() {
-  return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
-      <Container>
-        <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with Dozens of amazing people, A REVOIR CETTE PARTIE LA JE DOIS METTRE LES COMPAGNIES AVEC LESQUELLES ON A TRAVAILLER
-          </h2>
-          <div className="h-px flex-auto bg-neutral-800" />
-        </FadeIn>
-        <FadeInStagger faster>
-          <ul
-            role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
-          >
-            {clients.map(([client, logo]) => (
-              <li key={client}>
-                <FadeIn>
-                </FadeIn>
-              </li>
-            ))}
-          </ul>
-        </FadeInStagger>
-      </Container>
-    </div>
-  )
-}
 
 function CaseStudies({ caseStudies }) {
   return (
@@ -162,7 +126,6 @@ function Collection() {
                 <h3 className="font-mona-sans text-white">
                 <Link href="/gallery">
                     <span className="absolute inset-0 " />
-                    Accessories
                     </Link>
                 </h3>
 
@@ -184,7 +147,6 @@ function Collection() {
                 <h3 className="font-mona-sans text-white">
                   <Link href="/gallery">
                     <span className="absolute inset-0 " />
-                    Wool Sweaters
                     </Link>
                 </h3>
 
