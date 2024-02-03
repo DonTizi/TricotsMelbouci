@@ -88,8 +88,11 @@ function Collection() {
     <div className=''>
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="sm:flex sm:items-baseline sm:justify-between">
-          <h2 className="text-2xl font-mona-sans tracking-tight text-gray-900">Our Gallery</h2>
-        </div>
+        <SectionIntro
+        title="Our Gallery"
+        className="mt-24 sm:mt-32 lg:mt-40"
+      >       </SectionIntro>
+       </div>
 
         <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
           <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">

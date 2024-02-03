@@ -3,7 +3,7 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
 import {ScrollImg} from '@/components/Scroll'
-function MyApp({ Component, pageProps }) {
+function MyApp({}) {
   return (
     <FadeIn>
 
@@ -15,6 +15,15 @@ function MyApp({ Component, pageProps }) {
       </Container >
       <Container className="w-full h-full">
         <ScrollImg/>
+        <SectionIntro title="Textures"
+        className="mt-24 sm:mt-32 lg:mt-40"
+      > </SectionIntro>
+          <ScrollImg/>
+          <SectionIntro title="Scarfs"
+        className="mt-24 sm:mt-32 lg:mt-40"
+      > </SectionIntro>
+          <ScrollImg/>
+
       </Container>
       </FadeIn>
       

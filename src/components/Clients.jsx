@@ -6,6 +6,7 @@ import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import { useState } from 'react';
 import { SectionIntro } from '@/components/SectionIntro'
+import { Button } from './Button';
 
 
 export function Clients() {
@@ -29,8 +30,6 @@ export function Clients() {
               </CountUp>
             </VisibilitySensor>
             + amazing companies,
-          </SectionIntro>
-          <SectionIntro  invert={true} className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
             and completed {' '} 
             <VisibilitySensor
               active={!counterStarted.count100}
@@ -48,15 +47,13 @@ export function Clients() {
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
         <FadeInStagger faster>
-          <ul
-            role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
-          >
-            {/* Votre mappage des clients ici */}
-          </ul>
+        <div className="mt-12 flex justify-center sm:justify-start">
+        <Button className="px-10 py-3 bg-transparent border border-white text-white hover:bg-white hover:text-neutral-950 transition-colors duration-300" href="/process">
+                  Discover How
+              </Button>
+            </div>
         </FadeInStagger>
       </Container>
     </div>
   );
 }
-
