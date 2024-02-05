@@ -3,7 +3,6 @@ import * as THREE from "three";
 import { Suspense, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Preload, Image as ImageImpl, ScrollControls, Scroll, useScroll, Html, useProgress } from "@react-three/drei";
-import '@/styles/gallery.css'
 function ImageP(props) {
   const ref = useRef();
   const group = useRef();

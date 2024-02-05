@@ -4,7 +4,6 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
 import {ScrollImg} from '@/components/Scroll'
 import {Textures} from '@/components/Textures'
-import '@/styles/gallery.css'
 
 function MyApp({}) {
   return (

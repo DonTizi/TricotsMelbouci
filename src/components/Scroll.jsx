@@ -3,7 +3,6 @@ import * as THREE from "three";
 import { Suspense, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Preload, Image as ImageImpl, ScrollControls, Scroll, useScroll, Html, useProgress } from "@react-three/drei";
-import '@/styles/gallery.css'
 function ImageP(props) {
   const ref = useRef();
   const group = useRef();
@@ -32,9 +31,9 @@ function Page({ m = 0.3, urls, ...props }) {
     <group {...props}>
       <ImageP position={[-width * w, 0, -1]} scale={[width * w - m * 2, 4, 1]} url={urls[0]} />
       <ImageP position={[0, 0, 0]} scale={[width * w - m * 2, 4, 1]} url={urls[1]} />
-      <ImageP position={[width * w, 0, 1]} scale={[width * w - m * 2, 4, 1]} url={urls[2]} />
+      <ImageP position={[width * w, 0, 1]} scale={[width * w - m * 2, 4, 1]} url={urls[2]} />  
     </group>
-  );
+  );// 2 = width , 4 egale le height et 1 le depth
 }
 
 function Pages() {
