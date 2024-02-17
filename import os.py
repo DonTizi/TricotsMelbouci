@@ -8,7 +8,7 @@ def rename_files_in_folder(folder_path):
     files.sort()
 
     # Boucle sur chaque fichier et le renomme
-    for i, filename in enumerate(files, start=1):
+    for i, filename in enumerate(files, start=30):
         # Crée le nouveau nom du fichier
         new_filename = f"{i}{os.path.splitext(filename)[1]}"
 
@@ -21,5 +21,5 @@ def rename_files_in_folder(folder_path):
         print(f"Renamed '{filename}' to '{new_filename}'")
 
 # Chemin du dossier contenant les fichiers à renommer
-folder_path = '/Users/dontizi/Downloads/tailwindui-studio/studio-js/src/images/Tricot Melbouci'
+folder_path = '/Users/dontizi/Downloads/images/textures'
 rename_files_in_folder(folder_path)

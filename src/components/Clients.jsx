@@ -16,8 +16,9 @@ export function Clients() {
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
-          <SectionIntro invert={true} className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with{' '} 
+          <div className='flex-grow'>
+          <h1 invert={true} className=" font-display text-3xl font-medium text-white sm:text-4xl text-left">
+          Partnering with Over{' '} 
              <VisibilitySensor
               active={!counterStarted.count25}
               onChange={isVisible => isVisible && setCounterStarted({ ...counterStarted, count25: true })}
@@ -29,8 +30,7 @@ export function Clients() {
                 )}
               </CountUp>
             </VisibilitySensor>
-            + amazing companies,
-            and completed {' '} 
+            + Renowned Brands, We've Successfully Executed More Than {' '} 
             <VisibilitySensor
               active={!counterStarted.count100}
               onChange={isVisible => isVisible && setCounterStarted({ ...counterStarted, count100: true })}
@@ -42,9 +42,11 @@ export function Clients() {
                 )}
               </CountUp>
             </VisibilitySensor>
-            + projects in 2023.
-          </SectionIntro>
+            +{' '}  Diverse Projects in 2023 Alone. See Our Success Stories.
+          </h1>
+          </div>
           <div className="h-px flex-auto bg-neutral-800" />
+
         </FadeIn>
         <FadeInStagger faster>
         <div className="mt-12 flex justify-center sm:justify-start">

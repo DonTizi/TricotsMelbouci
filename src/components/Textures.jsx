@@ -42,17 +42,17 @@ function Pages() {
 
   return (
 <>
-  <Page position={[-width * 1, 0, 0]} urls={["19.jpg", "20.jpg", "21.jpg"]} />
-  <Page position={[width * 0, 0, 0]} urls={["22.jpg", "23.jpg", "29.jpg"]} />
-  <Page position={[width * 1, 0, 0]} urls={["25.jpg", "26.jpg", "27.jpg"]} />
-  <Page position={[width * 2, 0, 0]} urls={["28.jpg", "29.jpg", "20.jpg"]} />
-  <Page position={[width * 3, 0, 0]} urls={["19.jpg", "20.jpg", "21.jpg"]} />
+<Page position={[-width * 1, 0, 0]} urls={["20.jpg", "33.jpg", "25.jpg"]} />
+<Page position={[width * 0, 0, 0]} urls={["19.jpg", "26.jpg", "27.jpg"]} />
+<Page position={[width * 1, 0, 0]} urls={["23.jpg", "29.jpg", "31.jpg"]} />
+<Page position={[width * 2, 0, 0]} urls={["36.jpg", "31.jpg", "21.jpg"]} />
+<Page position={[width * 3, 0, 0]} urls={["25.jpg", "21.jpg", "22.jpg"]} />
+<Page position={[width * 4, 0, 0]} urls={["34.jpg", "27.jpg", "23.jpg"]} />
+<Page position={[width * 5, 0, 0]} urls={["22.jpg", "21.jpg", "36.jpg"]} />
+<Page position={[width * 6, 0, 0]} urls={["30.jpg", "28.jpg", "20.jpg"]} />
+<Page position={[width * 7, 0, 0]} urls={["35.jpg", "32.jpg", "34.jpg"]} />
+<Page position={[width * 8, 0, 0]} urls={["22.jpg", "23.jpg", "29.jpg"]} />
 
-  <Page position={[width * 4, 0, 0]} urls={["22.jpg", "23.jpg", "28.jpg"]} />
-  <Page position={[width * 5, 0, 0]} urls={["25.jpg", "26.jpg", "27.jpg"]} />
-  <Page position={[width * 6, 0, 0]} urls={["28.jpg", "29.jpg", "20.jpg"]} />
-  <Page position={[width * 7, 0, 0]} urls={["19.jpg", "20.jpg", "21.jpg"]} />
-  <Page position={[width * 8, 0, 0]} urls={["22.jpg", "23.jpg", "29.jpg"]} />
 </>
 
 

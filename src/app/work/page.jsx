@@ -144,7 +144,7 @@ export default async function Work() {
     <>
       <PageIntro
         eyebrow="Our work"
-        title="Workshop"
+        title="Excellence"
       >
         <p>
         Tricots Melbouci specializes in crafting high-quality traditional knitwear in Montreal, utilizing artisanal techniques and local materials. We offer personalized design services and fabric consultations. Additionally, our workshop is equipped for continuous and large-scale production, ensuring both quality and quantity in our offerings.

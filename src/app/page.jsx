@@ -26,7 +26,7 @@ function CaseStudies({ caseStudies }) {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
 <p>
-  {"Discover our range of services that cater to all your textile design needs. From custom-made designs to fabric sourcing, we offer a variety of services to help bring your vision to life. Explore our services below to learn more."}
+  {"Create your vision with Tricots Melbouci's unique textiles. Join hands with our passionate team to bring your style to life using sustainable, quality fabrics. Every thread tells a story — let's weave yours. Begin your bespoke journey now."}
 </p>
 
       </SectionIntro>
@@ -167,11 +167,11 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We help you identify, explore and product to new Models."
+        title="We assist you in recognizing, investigating, and crafting new textile designs."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
 <p>
-  {"As long as those opportunities involve giving us resources and passion."}
+  {"We guide you in discovering, developing, and launching innovative textile designs. Your creative passion, combined with our expertise."}
 </p>
 
       </SectionIntro>
@@ -187,19 +187,15 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Needs Analysis">
+            <ListItem title="Demand Assessment">
            
-We begin by carefully analyzing our customers' textile needs to craft products that meet their standards, while optimizing resource use and reducing waste. We also educate customers about the advantages of eco-friendly textiles.
-            </ListItem>
-            <ListItem title="Material Selection">
-            Our choice of raw materials is pivotal to sustainable textile production. We favor eco-friendly options like organic, recycled, and renewable fibers. Collaborating closely with suppliers, we ensure materials meet the highest environmental standards.
-            </ListItem>
-            <ListItem title="Production Excellence">
-            Our textile production prioritizes energy efficiency and waste reduction. With cutting-edge machinery, we minimize energy use while upholding quality. We employ waste management practices to maximize recycling and uphold ethical working conditions for our team.
-            </ListItem>
-            <ListItem title="Exportation">
-            Our product exports are eco-driven, featuring sustainable transportation choices and carbon footprint reduction through streamlined logistics. Our eco-friendly packaging minimizes waste. We proudly hold international certifications affirming our dedication to environmentally responsible textile production.
-            </ListItem>
+            We initiate our process by thoroughly examining our clients' textile requirements to design products that align with their aspirations, optimizing the use of resources and minimizing waste. We're also committed to informing our clients about the benefits of sustainable textiles.            </ListItem>
+            <ListItem title="Eco-Conscious Material Choice">
+            Selecting the right raw materials is crucial for our environmentally responsible textile production. We opt for green alternatives such as organic, upcycled, and renewable fibers. In close partnership with our suppliers, we strive to ensure our materials adhere to the strictest ecological standards.            </ListItem>
+            <ListItem title="Sustainable Manufacturing">
+            Our textile manufacturing sets the standard for energy efficiency and minimizing waste. With state-of-the-art technology, we aim to reduce energy consumption and promote high-quality production, while our waste reduction practices focus on recycling and ethical work environments.            </ListItem>
+            <ListItem title="Green Export Practices">
+            We ensure our exports reflect our commitment to the environment, with sustainable shipping and reduced carbon emissions. Our packaging choices further our waste reduction goals, and our international certifications speak to our dedication to responsible textile production.            </ListItem>
           </List>
         </div>
       </Container>
@@ -224,7 +220,7 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
 
-          In the heart of Montreal, our artisans elegantly weave tradition with innovation, crafting textiles that embody the spirit of Quebec's rich craftsmanship. Each stitch is a testament to our dedication to Canadian excellence.          </p>
+          In the heart of Montreal, Tricots Melbouci blends the old with the new. Our local artisans pour heart into every piece, celebrating Quebec's legacy of craftsmanship. We choose natural materials and thoughtful methods to make clothes that last and honor Canada's tradition of quality.</p>
         </FadeIn>
       </Container>
 
