@@ -67,15 +67,7 @@ function ContactForm() {
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
           <TextInput label="Message" name="message" />
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
-            <fieldset>
-              <legend className="text-base/6 text-neutral-500">Budget</legend>
-              <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="$250 – $2.5K" name="budget" value="25" />
-                <RadioInput label="$2.5K – 5K" name="budget" value="50" />
-                <RadioInput label="5K – 10K" name="budget" value="100" />
-                <RadioInput label="More than $10K" name="budget" value="150" />
-              </div>
-            </fieldset>
+  
           </div>
         </div>
         <Button type="submit" className="mt-10">
