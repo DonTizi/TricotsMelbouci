@@ -66,9 +66,6 @@ function ContactForm() {
           />
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
           <TextInput label="Message" name="message" />
-          <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
-  
-          </div>
         </div>
         <Button type="submit" className="mt-10">
           Let’s work together
