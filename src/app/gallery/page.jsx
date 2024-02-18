@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
@@ -36,6 +37,8 @@ export default function Homepage(){
   return(
     <div className="w-full h-full">
     <MyApp/>
+          <ContactSection />
+
     </div>
   )
 };

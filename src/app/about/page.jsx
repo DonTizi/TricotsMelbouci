@@ -151,9 +151,9 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="A Century Legacy of Textile">
+      <PageIntro eyebrow="About us" title="Decades Legacy of Textile">
         <p>
-        As the proud successor of Tricots Capraro, a name synonymous with textile craftsmanship for nearly a century, Tricots Melbouci, led by Houria Melbouci, embodies the true spirit of a family-run enterprise.         </p>
+        As the proud successor of Tricots Capraro, a name synonymous with textile craftsmanship for decades, Tricots Melbouci, led by Houria Melbouci, embodies the true spirit of a canadian family-run enterprise.         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
           Our commitment at Tricots Melbouci is to produce high-quality, locally-made knitwear, combining the principles of sustainability and efficiency.           </p>

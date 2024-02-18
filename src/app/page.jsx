@@ -8,7 +8,6 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import { Testimonial } from '@/components/Testimonial'
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
@@ -22,11 +21,11 @@ function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro
-        title="Learn about our products."
+        title="Learn about our Services."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
 <p>
-  {"Create your vision with Tricots Melbouci's unique textiles. Join hands with our passionate team to bring your style to life using sustainable, quality fabrics. Every thread tells a story — let's weave yours. Begin your bespoke journey now."}
+  {"Explore Our Services. Make something special with Tricots Melbouci. Our team is here to help you pick the perfect fabric for a look that's all your own. Start your custom knitwear project with us today."}
 </p>
 
       </SectionIntro>
@@ -166,12 +165,12 @@ function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="Services"
-        title="We assist you in recognizing, investigating, and crafting new textile designs."
+        eyebrow="Products"
+        title="Discover Our Range "
         className="mt-24 sm:mt-32 lg:mt-40"
       >
 <p>
-  {"We guide you in discovering, developing, and launching innovative textile designs. Your creative passion, combined with our expertise."}
+  {"Find your perfect piece from soft scarves to custom sweaters. Our knits blend comfort with style."}
 </p>
 
       </SectionIntro>
@@ -187,15 +186,17 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Demand Assessment">
+            <ListItem title="Fabric Yardage">
            
-            We initiate our process by thoroughly examining our clients' textile requirements to design products that align with their aspirations, optimizing the use of resources and minimizing waste. We're also committed to informing our clients about the benefits of sustainable textiles.            </ListItem>
-            <ListItem title="Eco-Conscious Material Choice">
-            Selecting the right raw materials is crucial for our environmentally responsible textile production. We opt for green alternatives such as organic, upcycled, and renewable fibers. In close partnership with our suppliers, we strive to ensure our materials adhere to the strictest ecological standards.            </ListItem>
-            <ListItem title="Sustainable Manufacturing">
-            Our textile manufacturing sets the standard for energy efficiency and minimizing waste. With state-of-the-art technology, we aim to reduce energy consumption and promote high-quality production, while our waste reduction practices focus on recycling and ethical work environments.            </ListItem>
-            <ListItem title="Green Export Practices">
-            We ensure our exports reflect our commitment to the environment, with sustainable shipping and reduced carbon emissions. Our packaging choices further our waste reduction goals, and our international certifications speak to our dedication to responsible textile production.            </ListItem>
+            Our commitment to excellence begins with the selection of premium fabrics. We source the finest yardage, ensuring each fabric — from organic cotton to innovative blends — meets strict environmental and quality standards for our custom knitwear.
+
+          </ListItem>
+            <ListItem title="Cuffs and Collars">
+            Every cuff and collar is crafted with the utmost attention to detail. Using sustainable materials, we create these essential knitwear components to not only look impeccable but also feel comfortable and last long.            </ListItem>
+            <ListItem title="Scarves">
+            Our scarves are woven from the best sustainable fibers, offering warmth and style without compromise. Each piece is a cozy embrace of our eco-conscious philosophy, designed to accessorize with purpose and pride.            </ListItem>
+            <ListItem title="Knitwear">
+            Our knitwear stands at the intersection of time-honored techniques and modern design. We blend traditional craftsmanship with contemporary style, ensuring each garment is a wearable testament to our dual dedication to innovation and enduring quality.            </ListItem>
           </List>
         </div>
       </Container>
@@ -205,7 +206,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are Tricots',
+    'We are Tricot Melbouci',
 }
 
 export default async function Home() {
@@ -227,18 +228,12 @@ export default async function Home() {
       <Clients />
 
       <CaseStudies caseStudies={caseStudies} />
+      <Services />
 
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
-      >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
-      </Testimonial>
       <Collection />
 
-      <Services />
+
+
 
       <ContactSection />
     </>

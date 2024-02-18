@@ -42,18 +42,12 @@ export function Clients() {
                 )}
               </CountUp>
             </VisibilitySensor>
-            +{' '}  Diverse Projects in 2023 Alone. See Our Success Stories.
+            +{' '}  Diverse Projects in 2023 Alone.
           </h1>
           </div>
-          <div className="h-px flex-auto bg-neutral-800" />
 
         </FadeIn>
         <FadeInStagger faster>
-        <div className="mt-12 flex justify-center sm:justify-start">
-        <Button className="px-10 py-3 bg-transparent border border-white text-white hover:bg-white hover:text-neutral-950 transition-colors duration-300" href="/process">
-                  Discover How
-              </Button>
-            </div>
         </FadeInStagger>
       </Container>
     </div>
