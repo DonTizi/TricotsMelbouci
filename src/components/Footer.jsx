@@ -4,6 +4,7 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
+import React, { useState } from 'react';
 
 
 
@@ -81,58 +82,67 @@ function ArrowIcon(props) {
 }
 
 function NewsletterForm() {
+  // État pour gérer l'affichage du message de remerciement
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  
   // Fonction pour gérer la soumission du formulaire
   const handleSubmit = (e) => {
-    e.preventDefault(); // Empêche le rechargement de la page
+    e.preventDefault();
     const formData = new FormData(e.target);
     const data = new URLSearchParams(formData);
 
-    // Envoie les données à Mailchimp
     fetch("https://gmail.us11.list-manage.com/subscribe/post?u=4806be22a68173f9cd7e25ffe&id=671796df78&f_id=0001b2e0f0", {
       method: "POST",
       body: data,
-      mode: "no-cors", // Utilise le mode 'no-cors' pour éviter les problèmes de CORS
+      mode: "no-cors",
     })
     .then(response => {
-      // Gérer la réponse ici (par exemple, afficher un message de succès)
-      console.log("Form submitted");
+      setIsSubmitted(true); // Met à jour l'état pour afficher le message de remerciement
+      e.target.reset(); // Nettoie le formulaire après la soumission
     })
     .catch(error => console.error("Error:", error));
   };
 
   return (
-    <form className="max-w-sm" onSubmit={handleSubmit}>
-      <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-        Sign up for our newsletter
-      </h2>
-      <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources, and
-        inspiration.
-      </p>
-      <div className="relative mt-6">
-        <input
-          name="EMAIL" // Nom du champ conforme à celui attendu par Mailchimp
-          type="email"
-          placeholder="Email address"
-          autoComplete="email"
-          aria-label="Email address"
-          required // Assurez-vous que le champ est rempli
-          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
-        />
-        {/* Champ caché pour la sécurité et pour éviter les inscriptions de bot */}
-        <input type="hidden" name="b_4806be22a68173f9cd7e25ffe_671796df78" tabIndex="-1" />
-        <div className="absolute inset-y-1 right-1 flex justify-end">
-          <button
-            type="submit"
-            aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800 w-12"
-          >
-            {/* Assurez-vous que le composant ArrowIcon est bien importé ou remplacé par un équivalent SVG/icone */}
-            <ArrowIcon className="w-4" />
-          </button>
+    <div>
+      <form className="max-w-sm" onSubmit={handleSubmit}>
+        <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+          Sign up for our newsletter
+        </h2>
+        <p className="mt-4 text-sm text-neutral-700">
+          Subscribe to get the latest design news, articles, resources, and
+          inspiration.
+        </p>
+        <div className="relative mt-6">
+          <input
+            name="EMAIL"
+            type="email"
+            placeholder="Email address"
+            autoComplete="email"
+            aria-label="Email address"
+            required
+            className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
+          />
+          <input type="hidden" name="b_4806be22a68173f9cd7e25ffe_671796df78" tabIndex="-1" />
+          <div className="absolute inset-y-1 right-1 flex justify-end">
+            <button
+              type="submit"
+              aria-label="Submit"
+              className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800 w-12"
+              disabled={isSubmitted} // Désactive le bouton après la soumission
+            >
+              {/* Assurez-vous que le composant ArrowIcon est bien importé ou remplacé par un équivalent SVG/icone */}
+              <ArrowIcon className="w-4" />
+            </button>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+      {isSubmitted && (
+        <p className="mt-4 text-sm text-neutral-950">
+          Thank you for subscribing to our newsletter.
+        </p>
+      )}
+    </div>
   );
 }
 
