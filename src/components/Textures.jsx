@@ -38,20 +38,28 @@ function Page({ m = 0.4, urls, ...props }) {
 
 function Pages() {
   const { width } = useThree((state) => state.viewport);
-  const pageWidth = width; // Assurez-vous que ceci correspond à la largeur réelle de vos pages
+  const pageWidth = width; 
 
   return (
 <>
-<Page position={[-width * 1, 0, 0]} urls={["20.jpg", "33.jpg", "25.jpg"]} />
-<Page position={[width * 0, 0, 0]} urls={["19.jpg", "26.jpg", "27.jpg"]} />
-<Page position={[width * 1, 0, 0]} urls={["23.jpg", "29.jpg", "31.jpg"]} />
-<Page position={[width * 2, 0, 0]} urls={["36.jpg", "31.jpg", "21.jpg"]} />
-<Page position={[width * 3, 0, 0]} urls={["25.jpg", "21.jpg", "22.jpg"]} />
-<Page position={[width * 4, 0, 0]} urls={["34.jpg", "27.jpg", "23.jpg"]} />
-<Page position={[width * 5, 0, 0]} urls={["22.jpg", "21.jpg", "36.jpg"]} />
-<Page position={[width * 6, 0, 0]} urls={["30.jpg", "28.jpg", "20.jpg"]} />
-<Page position={[width * 7, 0, 0]} urls={["35.jpg", "32.jpg", "34.jpg"]} />
-<Page position={[width * 8, 0, 0]} urls={["22.jpg", "23.jpg", "29.jpg"]} />
+<Page position={[-width * 1, 0, 0]} urls={["75.jpg", "31.jpg", "32.jpg"]} />
+<Page position={[width * 0, 0, 0]} urls={["33.jpg", "34.jpg","35.jpg"]} />
+<Page position={[width * 1, 0, 0]} urls={["36.jpg", "37.jpg", "38.jpg"]} />
+<Page position={[width * 2, 0, 0]} urls={["39.jpg", "40.jpg","41.jpg"]} />
+<Page position={[width * 3, 0, 0]} urls={["42.jpg", "43.jpg","44.jpg"]} />
+<Page position={[width * 4, 0, 0]} urls={["45.jpg", "46.jpg","47.jpg"]} />
+<Page position={[width * 5, 0, 0]} urls={["48.jpg", "49.jpg","50.jpg"]} />
+<Page position={[width * 6, 0, 0]} urls={["51.jpg", "52.jpg", "53.jpg"]} />
+<Page position={[width * 7, 0, 0]} urls={["54.jpg", "55.jpg","56.jpg"]} />
+<Page position={[width * 8, 0, 0]} urls={["57.jpg", "58.jpg", "59.jpg"]} />
+<Page position={[width * 9, 0, 0]} urls={["60.jpg", "61.jpg","62.jpg"]} />
+<Page position={[width * 10, 0, 0]} urls={["63.jpg", "64.jpg","65.jpg"]} />
+<Page position={[width * 11, 0, 0]} urls={["66.jpg", "67.jpg","68.jpg"]} />
+<Page position={[width * 12, 0, 0]} urls={["69.jpg", "70.jpg","71.jpg"]} />
+<Page position={[-width * 13, 0, 0]} urls={["72.jpg", "73.jpg", "74.jpg"]} />
+<Page position={[width * 14, 0, 0]} urls={["75.jpg", "76.jpg","33.jpg"]} />
+
+
 
 </>
 
@@ -79,7 +87,7 @@ export function Textures() {
       <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
         <Loader />
         <Suspense fallback={null}>
-          <ScrollControls infinite horizontal damping={0.4} pages={6} distance={2}>
+          <ScrollControls infinite horizontal damping={0.4} pages={14} distance={2}>
             <Scroll >
               <Pages />
             </Scroll>

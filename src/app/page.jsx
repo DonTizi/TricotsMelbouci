@@ -8,7 +8,6 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 import {Clients} from '@/components/Clients'
@@ -77,7 +76,7 @@ function Collection() {
     <FadeIn className=""> {/* Ajouter l'effet de fondu ici */}
     <div className=''>
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-        <div className="sm:flex sm:items-baseline sm:justify-between">
+        <div className="">
         <SectionIntro
         title="Our Gallery"
         className="mt-24 sm:mt-32 lg:mt-40"
@@ -87,7 +86,7 @@ function Collection() {
         <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
           <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
             <img
-              src="https://i.postimg.cc/W1cwCc1b/bleu.jpg"
+              src="https://i.postimg.cc/5NT6tTNQ/24.jpg"
               alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
               className="object-cover object-center group-hover:opacity-75"
             />
@@ -106,7 +105,7 @@ function Collection() {
           </div>
           <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full">
             <img
-              src="https://i.postimg.cc/3JmcdByN/Screenshot-2024-01-24-at-9-32-17-PM.png"
+              src="https://i.postimg.cc/T35v7Zd9/IMG-2182.png"
               alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters."
               className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full"
             />
@@ -127,7 +126,7 @@ function Collection() {
           </div>
           <div className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full">
             <img
-              src="https://i.postimg.cc/DzZ6ddzq/Screenshot-2024-01-24-at-9-31-49-PM.png"
+              src="https://i.postimg.cc/50cj0B0B/IMG-2758.png"
               alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk."
               className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full"
             />
@@ -228,7 +227,6 @@ export default async function Home() {
       <Clients />
 
       <CaseStudies caseStudies={caseStudies} />
-      <Services />
 
       <Collection />
 

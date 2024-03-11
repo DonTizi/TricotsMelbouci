@@ -5,7 +5,6 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
 import {ScrollImg} from '@/components/Scroll'
 import {Textures} from '@/components/Textures'
-import {Colls} from '@/components/Colls'
 function MyApp({}) {
   return (
     <FadeIn>
@@ -22,10 +21,6 @@ function MyApp({}) {
         className="mt-24 sm:mt-32 lg:mt-40"
       > Diverse Textures, Sustainable Knitwear Craft made responsibly.</SectionIntro>
           <Textures/>
-          <SectionIntro title="Knit collars"
-        className="mt-24 sm:mt-32 lg:mt-40"
-      > Knit Collars: Sustainable, Stylish Comfort.</SectionIntro>
-          <Colls/>
 
       </Container>
       </FadeIn>
