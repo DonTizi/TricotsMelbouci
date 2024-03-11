@@ -129,7 +129,7 @@ export const metadata = {
     'our strength lies in collaboration, uniting diverse skills and ideas to craft exceptional knitwear that stands at the crossroads of creativity and artisanal excellence.',
 }
 
-export default async function About({ params: { lang } }) {
+export default async function About() {
   let blogArticles = (await loadArticles()).slice(0, 2)
 
   return (

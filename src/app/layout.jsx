@@ -9,15 +9,10 @@ export const metadata = {
   },
 }
 
-export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'fr' }]
-}
-
-export default function Layout({ children, params }) {
+export default function Layout({ children }) {
   return (
-    <html lang={params.lang} className="h-full bg-neutral-950 text-base antialiased">
+    <html lang="en" className="h-full bg-neutral-950 text-base antialiased">
       <body className="flex min-h-full flex-col">
-        
         <RootLayout>{children}</RootLayout>
       </body>
     </html>

@@ -94,7 +94,7 @@ export const metadata = {
     'Tricots Melbouci specializes in crafting high-quality traditional knitwear in Montreal, utilizing artisanal techniques and local materials. We offer personalized design services and fabric consultations. Additionally, our workshop is equipped for continuous and large-scale production, ensuring both quality and quantity in our offerings.',
 }
 
-export default async function Work({ params: { lang } }) {
+export default async function Work() {
   let caseStudies = await loadCaseStudies()
 
   return (
