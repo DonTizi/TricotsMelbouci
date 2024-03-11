@@ -165,7 +165,7 @@ export const metadata = {
     'We make every piece with a mix of new ideas and old traditions, focusing on careful work and a love for long-lasting, quality knitwear.',
 }
 
-export default function Process() {
+export default function Process({ params: { lang } }) {
   return (
     <>
       <PageIntro eyebrow="Our process" title="How we work">

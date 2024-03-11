@@ -79,7 +79,7 @@ export const metadata = {
   description: 'Let’s work together. We can’t wait to hear from you.',
 }
 
-export default function Contact() {
+export default function Contact({ params: { lang } }) {
   return (
     <>
       <PageIntro eyebrow="Contact us" title="Let’s work together">

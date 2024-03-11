@@ -28,7 +28,7 @@ function MyApp({}) {
   );
 }
 
-export default function Homepage(){
+export default function Homepage({ params: { lang } }){
   return(
     <div className="w-full h-full">
     <MyApp/>

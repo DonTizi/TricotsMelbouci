@@ -16,7 +16,7 @@ export const metadata = {
     'Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles.',
 }
 
-export default async function Blog() {
+export default async function Blog({ params: { lang } }) {
   let articles = await loadArticles()
 
   return (

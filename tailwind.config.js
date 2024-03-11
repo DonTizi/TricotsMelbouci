@@ -1,6 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
-const aspectRatio = require('@tailwindcss/aspect-ratio');
-
+const aspectRatio = require('@tailwindcss/aspect-ratio')
+const languageform =  require('@tailwindcss/forms');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,mdx,ts,tsx}'],
@@ -33,6 +33,7 @@ module.exports = {
   },
   plugins: [
     aspectRatio,
+    languageform,
 
   ],
 }

@@ -20,7 +20,6 @@ import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
-
 const RootLayoutContext = createContext(null)
 
 function XIcon(props) {
@@ -97,6 +96,7 @@ function Header({
           </button>
         </div>
       </div>
+
     </Container>
   )
 }
