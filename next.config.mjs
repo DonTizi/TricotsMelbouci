@@ -79,5 +79,5 @@ export default async function config() {
     },
   })
 
-  return withMDX(nextConfig) //test
+  return withMDX(nextConfig)
 }
