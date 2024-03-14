@@ -23,7 +23,7 @@ function ImageP(props) {
   );
 }
 
-function Page({ m = 0.4, urls, ...props }) {
+function Page({ m = 0.3, urls, ...props }) {
   const { width } = useThree((state) => state.viewport);
   const pageWidth = width; // Assurez-vous que ceci correspond à la largeur réelle de vos pages
   const w = pageWidth < 10 ? 2 / 2 : 2 / 4;
@@ -33,24 +33,28 @@ function Page({ m = 0.4, urls, ...props }) {
       <ImageP position={[0, 0, 0]} scale={[width * w - m * 2, 4, 1]} url={urls[1]} />
       <ImageP position={[width * w, 0, 1]} scale={[width * w - m * 2, 4, 1]} url={urls[2]} />  
     </group>
-  );
+  );// 2 = width , 4 egale le height et 1 le depth
 }
 
 function Pages() {
   const { width } = useThree((state) => state.viewport);
-  const pageWidth = width; 
+  const pageWidth = width; // Assurez-vous que ceci correspond à la largeur réelle de vos pages
 
   return (
-<>
-<Page position={[-width * 1, 0, 0]} urls={["75.jpg", "31.jpg", "32.jpg"]} />
-<Page position={[width * 0, 0, 0]} urls={["33.jpg", "34.jpg","35.jpg"]} />
-<Page position={[width * 1, 0, 0]} urls={["36.jpg", "37.jpg", "38.jpg"]} />
-<Page position={[width * 2, 0, 0]} urls={["39.jpg", "40.jpg","41.jpg"]} />
+    <>
+    <Page position={[-width * 1, 0, 0]} urls={["9.jpg", "2.jpg", "3.jpg"]} />
+    <Page position={[width * 0, 0, 0]} urls={["4.jpg", "5.jpg", "6.jpg"]} />
+    <Page position={[width * 1, 0, 0]} urls={["7.jpg", "8.jpg", "9.jpg"]} />
+    <Page position={[width * 2, 0, 0]} urls={["10.jpg", "11.jpg", "12.jpg"]} />
+    <Page position={[width * 3, 0, 0]} urls={["13.jpg", "14.jpg", "15.jpg"]} />
 
-
-
-</>
-
+    <Page position={[width * 4, 0, 0]} urls={["16.jpg", "17.jpg", "18.jpg"]} />
+    <Page position={[width * 5, 0, 0]} urls={["4.jpg", "5.jpg", "6.jpg"]} />
+    <Page position={[width * 6, 0, 0]} urls={["7.jpg", "8.jpg", "9.jpg"]} />
+    <Page position={[width * 7, 0, 0]} urls={["10.jpg", "11.jpg", "12.jpg"]} />
+    <Page position={[width * 8, 0, 0]} urls={["13.jpg", "14.jpg", "15.jpg"]} />
+  
+    </>
 
   );
 }
@@ -75,7 +79,7 @@ export function Textures() {
       <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
         <Loader />
         <Suspense fallback={null}>
-          <ScrollControls infinite horizontal damping={0.4} pages={14} distance={2}>
+          <ScrollControls infinite horizontal damping={0.4} pages={6} distance={2}>
             <Scroll >
               <Pages />
             </Scroll>
