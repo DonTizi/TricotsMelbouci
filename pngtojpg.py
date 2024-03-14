@@ -27,7 +27,7 @@ for fichier in os.listdir(dossier_courant):
   # Vérifier si le fichier est un PNG
   if fichier.endswith(".png"):
     # Déterminer le nom du fichier JPG
-    fichier_jpg = fichier.replace(".png", ".jpg")
+    fichier_jpg = fichier.replace(".JPG", ".jpg")
 
     # Convertir le fichier PNG en JPG
     convertir_png_en_jpg(fichier, fichier_jpg)
@@ -36,4 +36,4 @@ for fichier in os.listdir(dossier_courant):
     print(f"Le fichier {fichier} a été converti en {fichier_jpg}")
 
 
-convertir_png_en_jpg("/Users/dontizi/Downloads/tailwindui-studio/studio-js/Gallery/Textile/1.png", "/Users/dontizi/Downloads/tailwindui-studio/studio-js/Gallery/Textile/jpg")
+convertir_png_en_jpg("public/2.JPG", "public/test")

@@ -1,7 +1,6 @@
-import Image from "next/image";
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
+import { FadeIn } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
 import {ScrollImg} from '@/components/Scroll'
 import {Textures} from '@/components/Textures'
