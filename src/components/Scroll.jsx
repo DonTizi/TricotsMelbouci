@@ -42,16 +42,19 @@ function Pages() {
 
   return (
     <>
-<Page position={[-width * 1, 0, 0]} urls={["items/2.jpg", "items/3.jpg", "items/4.jpg"]} />
-<Page position={[width * 0, 0, 0]} urls={["items/5.jpg", "items/6.jpg", "items/7.jpg"]} />
-<Page position={[width * 1, 0, 0]} urls={["items/8.jpg", "items/9.jpg", "items/10.jpg"]} />
-<Page position={[width * 2, 0, 0]} urls={["items/11.jpg", "items/12.jpg", "items/13.jpg"]} />
-<Page position={[width * 3, 0, 0]} urls={["items/14.jpg", "items/15.jpg", "items/16.jpg"]} />
-<Page position={[width * 4, 0, 0]} urls={["items/17.jpg", "items/18.jpg", "items/19.jpg"]} />
-<Page position={[width * 5, 0, 0]} urls={["items/20.jpg", "items/21.jpg", "items/22.jpg"]} />
-<Page position={[width * 6, 0, 0]} urls={["items/23.jpg", "items/24.jpg", "items/25.jpg"]} />
-<Page position={[width * 7, 0, 0]} urls={["items/26.jpg", "items/27.jpg", "items/28.jpg"]} />
+<Page position={[-width * 1, 0, 0]} urls={["2.jpg", "3.jpg", "4.jpg"]} />
+<Page position={[width * 0, 0, 0]} urls={["5.jpg", "6.jpg","8.jpg"]} />
+<Page position={[width * 1, 0, 0]} urls={["7.jpg", "9.jpg", "10.jpg"]} />
+<Page position={[width * 2, 0, 0]} urls={["11.jpg", "12.jpg","13.jpg"]} />
+<Page position={[width * 3, 0, 0]} urls={["14.jpg", "15.jpg","16.jpg"]} />
+<Page position={[width * 4, 0, 0]} urls={["17.jpg", "18.jpg","19.jpg"]} />
+<Page position={[width * 5, 0, 0]} urls={["20.jpg", "21.jpg","22.jpg"]} />
+<Page position={[-width * 6, 0, 0]} urls={["23.jpg", "24.jpg", "25.jpg"]} />
+<Page position={[width * 7, 0, 0]} urls={["26.jpg", "27.jpg","28.jpg"]} />
 
+
+
+  
     </>
 
   );
@@ -77,7 +80,7 @@ export function ScrollImg() {
       <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
         <Loader />
         <Suspense fallback={null}>
-          <ScrollControls infinite horizontal damping={0.4} pages={6} distance={2}>
+          <ScrollControls infinite horizontal damping={0.4} pages={7} distance={2}>
             <Scroll >
               <Pages />
             </Scroll>

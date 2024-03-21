@@ -5,4 +5,4 @@ export function useMDXComponents(components) {
     ...components,
     ...MDXComponents,
   }
-} //ffr
+}

@@ -23,7 +23,7 @@ function ImageP(props) {
   );
 }
 
-function Page({ m = 0.3, urls, ...props }) {
+function Page({ m = 0.4, urls, ...props }) {
   const { width } = useThree((state) => state.viewport);
   const pageWidth = width; // Assurez-vous que ceci correspond à la largeur réelle de vos pages
   const w = pageWidth < 10 ? 2 / 2 : 2 / 4;
@@ -33,29 +33,36 @@ function Page({ m = 0.3, urls, ...props }) {
       <ImageP position={[0, 0, 0]} scale={[width * w - m * 2, 4, 1]} url={urls[1]} />
       <ImageP position={[width * w, 0, 1]} scale={[width * w - m * 2, 4, 1]} url={urls[2]} />  
     </group>
-  );// 2 = width , 4 egale le height et 1 le depth
+  );
 }
 
 function Pages() {
   const { width } = useThree((state) => state.viewport);
-  const pageWidth = width; // Assurez-vous que ceci correspond à la largeur réelle de vos pages
+  const pageWidth = width; 
 
   return (
-    <>
-<Page position={[-width * 1, 0, 0]} urls={["texture/49.jpg", "texture/61.jpg", "texture/33.jpg"]} />
-<Page position={[width * 0, 0, 0]} urls={["texture/67.jpg", "texture/74.jpg", "texture/36.jpg"]} />
-<Page position={[width * 1, 0, 0]} urls={["texture/37.jpg", "texture/38.jpg", "texture/67.jpg"]} />
-<Page position={[width * 2, 0, 0]} urls={["texture/40.jpg", "texture/62.jpg", "texture/65.jpg"]} />
-<Page position={[width * 3, 0, 0]} urls={["texture/43.jpg", "texture/44.jpg", "texture/45.jpg"]} />
-<Page position={[width * 4, 0, 0]} urls={["texture/46.jpg", "texture/40.jpg", "texture/62.jpg"]} />
-<Page position={[width * 5, 0, 0]} urls={["texture/49.jpg", "texture/71.jpg", "texture/51.jpg"]} />
-<Page position={[width * 6, 0, 0]} urls={["texture/61.jpg", "texture/62.jpg", "texture/63.jpg"]} />
-<Page position={[width * 7, 0, 0]} urls={["texture/64.jpg", "texture/65.jpg", "texture/66.jpg"]} />
-<Page position={[width * 8, 0, 0]} urls={["texture/67.jpg", "texture/68.jpg", "texture/38.jpg"]} />
-<Page position={[width * 9, 0, 0]} urls={["texture/45.jpg", "texture/71.jpg", "texture/72.jpg"]} />
-<Page position={[width * 10, 0, 0]} urls={["texture/76.jpg", "texture/74.jpg", "texture/75.jpg"]} />
+<>
+<Page position={[-width * 1, 0, 0]} urls={["75.jpg", "31.jpg", "32.jpg"]} />
+<Page position={[width * 0, 0, 0]} urls={["33.jpg", "34.jpg","35.jpg"]} />
+<Page position={[width * 1, 0, 0]} urls={["36.jpg", "37.jpg", "38.jpg"]} />
+<Page position={[width * 2, 0, 0]} urls={["39.jpg", "40.jpg","41.jpg"]} />
+<Page position={[width * 3, 0, 0]} urls={["42.jpg", "43.jpg","44.jpg"]} />
+<Page position={[width * 4, 0, 0]} urls={["45.jpg", "46.jpg","47.jpg"]} />
+<Page position={[width * 5, 0, 0]} urls={["48.jpg", "49.jpg","50.jpg"]} />
+<Page position={[width * 6, 0, 0]} urls={["51.jpg", "52.jpg", "53.jpg"]} />
+<Page position={[width * 7, 0, 0]} urls={["54.jpg", "55.jpg","56.jpg"]} />
+<Page position={[width * 8, 0, 0]} urls={["57.jpg", "58.jpg", "59.jpg"]} />
+<Page position={[width * 9, 0, 0]} urls={["60.jpg", "61.jpg","62.jpg"]} />
+<Page position={[width * 10, 0, 0]} urls={["63.jpg", "64.jpg","65.jpg"]} />
+<Page position={[width * 11, 0, 0]} urls={["66.jpg", "67.jpg","68.jpg"]} />
+<Page position={[width * 12, 0, 0]} urls={["69.jpg", "70.jpg","71.jpg"]} />
+<Page position={[-width * 13, 0, 0]} urls={["72.jpg", "73.jpg", "74.jpg"]} />
+<Page position={[width * 14, 0, 0]} urls={["75.jpg", "76.jpg","33.jpg"]} />
 
-    </>
+
+
+</>
+
 
   );
 }
@@ -80,7 +87,7 @@ export function Textures() {
       <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
         <Loader />
         <Suspense fallback={null}>
-          <ScrollControls infinite horizontal damping={0.4} pages={6} distance={2}>
+          <ScrollControls infinite horizontal damping={0.4} pages={14} distance={2}>
             <Scroll >
               <Pages />
             </Scroll>
