@@ -42,21 +42,18 @@ function Pages() {
 
   return (
     <>
-<Page position={[-width * 1, 0, 0]} urls={["texture/31.jpg", "texture/61.jpg", "texture/33.jpg"]} />
-<Page position={[width * 0, 0, 0]} urls={["texture/34.jpg", "texture/35.jpg", "texture/36.jpg"]} />
-<Page position={[width * 1, 0, 0]} urls={["texture/37.jpg", "texture/38.jpg", "texture/39.jpg"]} />
-<Page position={[width * 2, 0, 0]} urls={["texture/40.jpg", "texture/55.jpg", "texture/65.jpg"]} />
+<Page position={[-width * 1, 0, 0]} urls={["texture/49.jpg", "texture/61.jpg", "texture/33.jpg"]} />
+<Page position={[width * 0, 0, 0]} urls={["texture/67.jpg", "texture/74.jpg", "texture/36.jpg"]} />
+<Page position={[width * 1, 0, 0]} urls={["texture/37.jpg", "texture/38.jpg", "texture/67.jpg"]} />
+<Page position={[width * 2, 0, 0]} urls={["texture/40.jpg", "texture/62.jpg", "texture/65.jpg"]} />
 <Page position={[width * 3, 0, 0]} urls={["texture/43.jpg", "texture/44.jpg", "texture/45.jpg"]} />
-<Page position={[width * 4, 0, 0]} urls={["texture/46.jpg", "texture/47.jpg", "texture/48.jpg"]} />
-<Page position={[width * 5, 0, 0]} urls={["texture/49.jpg", "texture/50.jpg", "texture/51.jpg"]} />
-<Page position={[width * 6, 0, 0]} urls={["texture/52.jpg", "texture/53.jpg", "texture/54.jpg"]} />
-<Page position={[width * 7, 0, 0]} urls={["texture/55.jpg", "texture/56.jpg", "texture/57.jpg"]} />
-<Page position={[width * 8, 0, 0]} urls={["texture/58.jpg", "texture/59.jpg", "texture/60.jpg"]} />
-<Page position={[width * 9, 0, 0]} urls={["texture/61.jpg", "texture/62.jpg", "texture/63.jpg"]} />
-<Page position={[width * 10, 0, 0]} urls={["texture/64.jpg", "texture/65.jpg", "texture/66.jpg"]} />
-<Page position={[width * 11, 0, 0]} urls={["texture/67.jpg", "texture/68.jpg", "texture/69.jpg"]} />
-<Page position={[width * 12, 0, 0]} urls={["texture/70.jpg", "texture/71.jpg", "texture/72.jpg"]} />
-<Page position={[width * 13, 0, 0]} urls={["texture/73.jpg", "texture/74.jpg", "texture/75.jpg"]} />
+<Page position={[width * 4, 0, 0]} urls={["texture/46.jpg", "texture/40.jpg", "texture/62.jpg"]} />
+<Page position={[width * 5, 0, 0]} urls={["texture/49.jpg", "texture/71.jpg", "texture/51.jpg"]} />
+<Page position={[width * 6, 0, 0]} urls={["texture/61.jpg", "texture/62.jpg", "texture/63.jpg"]} />
+<Page position={[width * 7, 0, 0]} urls={["texture/64.jpg", "texture/65.jpg", "texture/66.jpg"]} />
+<Page position={[width * 8, 0, 0]} urls={["texture/67.jpg", "texture/68.jpg", "texture/38.jpg"]} />
+<Page position={[width * 9, 0, 0]} urls={["texture/45.jpg", "texture/71.jpg", "texture/72.jpg"]} />
+<Page position={[width * 10, 0, 0]} urls={["texture/76.jpg", "texture/74.jpg", "texture/75.jpg"]} />
 
     </>
 
