@@ -81,8 +81,7 @@ function Build() {
         author={{ name: 'Houria Cheurfi', role: 'CEO of Tricots Melbouci' }}
         className="mt-12"
       >
-        T&M were so regular with their progress updates we almost began to
-        think they were automated!
+        We have a complete catalog for different types of needs and we are very attentive to the quality of our textiles.
       </Blockquote>
       <TagList className="mt-4">
         <TagListItem>cashmere</TagListItem>
