@@ -53,7 +53,7 @@ export function Logo({
         invert={invert}
         filled={filled}
       />
-   <text x="21" y="29" style={{ fontSize: '15px', fontFamily: 'mona, sans-serif', color: 'black' }} className={invert ? 'fill-white' : 'fill-neutral-950'}>Manufacture.</text>
+   <text x="21" y="31" style={{ fontSize: '18px', fontFamily: 'mona, sans-serif', color: 'black' }} className={invert ? 'fill-white' : 'fill-neutral-950'}>Manufacture</text>
 
     </svg>
   )
