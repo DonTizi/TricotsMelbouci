@@ -5,7 +5,7 @@ export function Logomark({ invert = false, filled = false, ...props }) {
   let id = useId()
 
   return (
-    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
+    <svg viewBox="0 0 22 32" aria-hidden="true" {...props}>
       <rect
         clipPath={`url(#${id}-clip)`}
         className={clsx(
@@ -42,7 +42,7 @@ export function Logo({
 }) {
   return (
     <svg
-      viewBox="0 0 130 32"
+      viewBox="0 0 110 32"
       aria-hidden="true"
       fontWeight='bold'
       className={clsx(fillOnHover && 'group/logo', className)}
@@ -53,7 +53,7 @@ export function Logo({
         invert={invert}
         filled={filled}
       />
-   <text x="21" y="31" style={{ fontSize: '18px', fontFamily: 'mona, sans-serif', color: 'black' }} className={invert ? 'fill-white' : 'fill-neutral-950'}>Manufacture</text>
+   <text x="21" y="32" style={{ fontSize: '15px', fontFamily: 'mona, sans-serif', color: 'black' }} className={invert ? 'fill-white' : 'fill-neutral-950'}>Manufacture</text>
 
     </svg>
   )
