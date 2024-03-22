@@ -205,7 +205,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are Tricot Melbouci',
+    'Discover our textile manufacturing in Montreal, specializing in natural fiber production: Knitting in wool, cashmere, cotton, and more.',
 }
 
 export default async function Home() {
