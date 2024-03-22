@@ -1,5 +1,5 @@
 import { RootLayout } from '@/components/RootLayout'
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import '@/styles/tailwind.css'
 
 export const metadata = {
