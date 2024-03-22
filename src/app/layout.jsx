@@ -1,12 +1,13 @@
 import { RootLayout } from '@/components/RootLayout'
-import {SpeedInsights} from "@/vercel/speed-insight/next"
+
 import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
     template: '%s - Tricots Melbouci',
-    default: 'Tricots Melbouci - Manifacturing Textile.',
+    default: 'Tricots Melbouci - Textile Manufacturing.',
   },
+  description:"Discover our textile manufacturing in Montreal, specializing in natural fiber production: Knitting in wool, cashmere, cotton, and more."
 }
 
 export default function Layout({ children }) {
