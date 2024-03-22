@@ -72,7 +72,7 @@ export function ScrollImg() {
       <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
         <Loader />
         <Suspense fallback={null}>
-          <ScrollControls infinite horizontal damping={0.4} pages={4} distance={2}>
+          <ScrollControls infinite horizontal damping={0.4} pages={6} distance={2}>
             <Scroll >
               <Pages />
             </Scroll>
