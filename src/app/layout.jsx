@@ -1,7 +1,7 @@
 import { RootLayout } from '@/components/RootLayout'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import '@/styles/tailwind.css'
-
+import { Analytics } from "@vercel/analytics/react"
 export const metadata = {
   title: {
     template: '%s - Tricots Melbouci',
@@ -15,7 +15,8 @@ export default function Layout({ children }) {
     <html lang="en" className="h-full bg-neutral-950 text-base antialiased">
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}
-        <SpeedInsights/></RootLayout>
+        <SpeedInsights/>
+        <Analytics/></RootLayout>
       </body>
     </html>
   )
