@@ -8,7 +8,8 @@ function ImageP(props) {
   const group = useRef();
   const data = useScroll();
   useFrame((state, delta) => {
-    group.current.position.z = THREE.MathUtils.damp(group.current.position.z, Math.max(0, data.delta * 50), 4, delta)
+    group.current.position.z = THREE.MathUtils.damp(group.current.position.z, Math.max(0, data.delta * 50), 4, delta);
+
   });
   return (
     <group ref={group}>
@@ -17,7 +18,7 @@ function ImageP(props) {
   );
 }
 
-function Page({ m = 0.4, urls, ...props }) {
+function Page({ m = 0.3, urls, ...props }) {
   const { width } = useThree((state) => state.viewport);
   const pageWidth = width; // Assurez-vous que ceci correspond à la largeur réelle de vos pages
   const w = pageWidth < 10 ? 2 / 2 : 2 / 4;
@@ -27,27 +28,26 @@ function Page({ m = 0.4, urls, ...props }) {
       <ImageP position={[0, 0, 0]} scale={[width * w - m * 2, 4, 1]} url={urls[1]} />
       <ImageP position={[width * w, 0, 1]} scale={[width * w - m * 2, 4, 1]} url={urls[2]} />  
     </group>
-  );
+  );// 2 = width , 4 egale le height et 1 le depth
 }
 
 function Pages() {
   const { width } = useThree((state) => state.viewport);
-  const pageWidth = width; 
+  const pageWidth = width; // Assurez-vous que ceci correspond à la largeur réelle de vos pages
 
   return (
-<>
-<Page position={[0, 0, 0]} urls={["textures/1.jpg", "textures/2.jpg", "textures/3.jpg"]} />
-<Page position={[width * 1, 0, 0]} urls={["textures/4.jpg", "textures/5.jpg", "textures/6.jpg"]} />
-<Page position={[width * 2, 0, 0]} urls={["textures/7.jpg", "textures/8.jpg", "textures/9.jpg"]} />
-<Page position={[width * 3, 0, 0]} urls={["textures/10.jpg", "textures/11.jpg", "textures/12.jpg"]} />
-<Page position={[width * 4, 0, 0]} urls={["textures/13.jpg", "textures/14.jpg", "textures/15.jpg"]} />
-<Page position={[width * 5, 0, 0]} urls={["textures/16.jpg", "textures/17.jpg", "textures/7.jpg"]} />
+    <>
+<Page position={[0, 0, 0]} urls={["cols/1.jpg", "cols/2.jpg", "cols/3.jpg"]} />
+<Page position={[width * 1, 0, 0]} urls={["cols/4.jpg", "cols/5.jpg", "cols/6.jpg"]} />
+<Page position={[width * 2, 0, 0]} urls={["cols/7.jpg", "cols/8.jpg", "cols/9.jpg"]} />
+<Page position={[width * 3, 0, 0]} urls={["cols/10.jpg", "cols/11.jpg", "cols/12.jpg"]} />
+<Page position={[width * 4, 0, 0]} urls={["cols/13.jpg", "cols/14.jpg", "cols/15.jpg"]} />
 
 
 
 
-</>
-
+  
+    </>
 
   );
 }
@@ -64,7 +64,7 @@ function Loader() {
   return null
 }
 
-export function Textures() {
+export function ScrollImg() {
   return (
     <>
 <div className="h-screen w-full max-w-screen-lg mx-auto">
@@ -72,7 +72,7 @@ export function Textures() {
       <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
         <Loader />
         <Suspense fallback={null}>
-          <ScrollControls infinite horizontal damping={0.4} pages={5} distance={2}>
+          <ScrollControls infinite horizontal damping={0.4} pages={4} distance={2}>
             <Scroll >
               <Pages />
             </Scroll>
