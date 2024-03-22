@@ -23,9 +23,9 @@ function Page({ m = 0.4, urls, ...props }) {
   const w = pageWidth < 10 ? 2 / 2 : 2 / 4;
   return (
     <group {...props}>
-      <ImageP position={[-width * w, 0, 0]} scale={[width * w - m * 2, 4, 1]} url={urls[0]} />
+      <ImageP position={[-width * w, 0, -1]} scale={[width * w - m * 2, 4, 1]} url={urls[0]} />
       <ImageP position={[0, 0, 0]} scale={[width * w - m * 2, 4, 1]} url={urls[1]} />
-      <ImageP position={[width * w, 0, 0]} scale={[width * w - m * 2, 4, 1]} url={urls[2]} />  
+      <ImageP position={[width * w, 0, 1]} scale={[width * w - m * 2, 4, 1]} url={urls[2]} />  
     </group>
   );
 }
