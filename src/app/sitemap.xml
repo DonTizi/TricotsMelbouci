@@ -1,63 +1,54 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://tricotmelbouci.com</loc>
-    <lastmod>2024-03-21T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
-  </url>
-
-    <url>
-    <loc>https://tricotmelbouci.com/gallery</loc>
-    <lastmod>2024-03-21T15:02:24.021Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-      <url>
-    <loc>https://tricotmelbouci.com/contact</loc>
-    <lastmod>2024-03-21T15:02:24.021Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tricotmelbouci.com/blog</loc>
-    <lastmod>2024-03-21T15:02:24.021Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-    <url>
-    <loc>https://tricotmelbouci.com/work/phobia</loc>
-    <lastmod>2024-03-21T15:02:24.021Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>  
-  <url>
-    <loc>https://tricotmelbouci.com/work/family-fund</loc>
-    <lastmod>2024-03-21T15:02:24.021Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>  
-  <url>
-    <loc>https://tricotmelbouci.com/work/unseal</loc>
-    <lastmod>2024-03-21T15:02:24.021Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-    <url>
-    <loc>https://tricotmelbouci.com/about</loc>
-    <lastmod>2024-03-21T15:02:24.021Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <url>
-    <loc>https://tricotmelbouci.com/work</loc>
-    <lastmod>2024-03-21T15:02:24.021Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-      <url>
-    <loc>https://tricotmelbouci.com/process</loc>
-    <lastmod>2024-03-21T15:02:24.021Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  </url>
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://www.tricotmelbouci.com/</loc>
+<lastmod>2024-03-23T01:34:30+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://www.tricotmelbouci.com/contact</loc>
+<lastmod>2024-03-23T01:34:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.tricotmelbouci.com/work</loc>
+<lastmod>2024-03-23T01:34:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.tricotmelbouci.com/about</loc>
+<lastmod>2024-03-23T01:34:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.tricotmelbouci.com/process</loc>
+<lastmod>2024-03-23T01:34:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.tricotmelbouci.com/blog</loc>
+<lastmod>2024-03-23T01:34:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.tricotmelbouci.com/work/unseal</loc>
+<lastmod>2024-03-23T01:34:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.tricotmelbouci.com/work/phobia</loc>
+<lastmod>2024-03-23T01:34:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.tricotmelbouci.com/work/family-fund</loc>
+<lastmod>2024-03-23T01:34:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.tricotmelbouci.com/gallery</loc>
+<lastmod>2024-03-23T01:34:30+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>
