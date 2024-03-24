@@ -10,9 +10,9 @@ export const metadata = {
   description:"Discover our textile manufacturing in Montreal, specializing in natural fiber production: Knitting in wool, cashmere, cotton, and more."
 }
 
-export default function Layout({ children }) {
+export default function Layout({ children , params: {lang}}) {
   return (
-    <html lang="en" className="h-full bg-neutral-950 text-base antialiased">
+    <html lang={lang} className="h-full bg-neutral-950 text-base antialiased">
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}
         <SpeedInsights/>

@@ -1,17 +1,23 @@
 import glob from 'fast-glob'
 
-async function loadEntries(directory, metaName) {
+async function loadEntries(directory, metaName, locale) {
+  // Construisez le chemin en fonction de la locale.
+
   return (
     await Promise.all(
-      (await glob('**/page.mdx', { cwd: `src/app/${directory}` })).map(
+      (await glob(`${directory}/**/*.mdx`, { cwd: `src/app/${locale}` })).map(
         async (filename) => {
-          let metadata = (await import(`../app/${directory}/${filename}`))[
-            metaName
-          ]
+          // Supprimez le préfixe 'directory/' de 'filename' si présent
+
+          // Assurez-vous que le chemin d'importation est correct en fonction de la locale.
+          console.log(`/src/app/${locale}/${filename}`); // Log le chemin complet
+
+          let metadata = (await import(`/src/app/${locale}/${filename}`))[metaName];
           return {
             ...metadata,
             metadata,
-            href: `/${directory}/${filename.replace(/\/page\.mdx$/, '')}`,
+            href: `/${locale}/${filename.replace(/\/page\.mdx$/, '')}`,
+            
           }
         },
       ),
@@ -19,10 +25,12 @@ async function loadEntries(directory, metaName) {
   ).sort((a, b) => b.date.localeCompare(a.date))
 }
 
-export function loadArticles() {
-  return loadEntries('blog', 'article')
+
+export function loadArticles(locale) {
+  return loadEntries('blog', 'article',locale)
 }
 
-export function loadCaseStudies() {
-  return loadEntries('work', 'caseStudy')
+export function loadCaseStudies(locale) {
+  return loadEntries('work', 'caseStudy',locale)
 }
+

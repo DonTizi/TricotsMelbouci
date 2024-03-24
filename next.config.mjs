@@ -11,9 +11,13 @@ import remarkUnwrapImages from 'remark-unwrap-images'
 import shiki from 'shiki'
 import { unifiedConditional } from 'unified-conditional'
 
+
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+
+
 }
 
 function remarkMDXLayout(source, metaName) {
@@ -71,8 +75,8 @@ export default async function config() {
             [[remarkMDXLayout, '@/app/blog/wrapper', 'article']],
           ],
           [
-            new RegExp(`^${escapeStringRegexp(path.resolve('src/app/work'))}`),
-            [[remarkMDXLayout, '@/app/work/wrapper', 'caseStudy']],
+            new RegExp(`^${escapeStringRegexp(path.resolve('src/app/fr/work'))}`),
+            [[remarkMDXLayout, '@/app/fr/work/wrapper', 'caseStudy']],
           ],
         ],
       ],
