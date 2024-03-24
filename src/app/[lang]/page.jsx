@@ -13,10 +13,11 @@ import { loadCaseStudies } from '@/lib/mdx'
 import {Clients} from '@/components/Clients'
 
 
-
+export const dynamic = 'force-dynamic'
 
 
 function CaseStudies({ caseStudies }) {
+  
   return (
     <>
       <SectionIntro
@@ -165,6 +166,7 @@ export const metadata = {
   description:
     'Discover our textile manufacturing in Montreal, specializing in natural fiber production: Knitting in wool, cashmere, cotton, and more.',
 }
+
 export default async function Home({ params: { lang } }) {
   let caseStudies = (await loadCaseStudies(lang)).slice(0, 3)
 
