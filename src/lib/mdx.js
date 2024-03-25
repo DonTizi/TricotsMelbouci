@@ -30,7 +30,7 @@ async function loadEntriesWork(metaName, lang) {
 
   return (
     await Promise.all(
-      (await glob(`work/**/*.mdx`, { cwd: `src/app/${lang}` })).map(
+      (await glob(`work/**/*.mdx`, { cwd: `src/app/fr` })).map(
         async (filename) => {
 
           let metadata = (await import(`/src/app/${lang}/${filename}`))[metaName];
@@ -42,6 +42,7 @@ async function loadEntriesWork(metaName, lang) {
           }
         },
       ),
+      
     )
   ).sort((a, b) => b.date.localeCompare(a.date))
 }

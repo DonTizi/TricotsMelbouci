@@ -71,11 +71,14 @@ export default async function config() {
       remarkPlugins: [
         remarkGfm,
         remarkUnwrapImages,
+
         [
           unifiedConditional,
           [
+            
             new RegExp(`^${escapeStringRegexp(path.resolve('@/app/blog'))}`),
             [[remarkMDXLayout, '@/app/blog/wrapper', 'article']],
+            
           ],
           [
             new RegExp(`^${escapeStringRegexp(path.resolve('@/app/fr/work'))}`),
@@ -86,10 +89,13 @@ export default async function config() {
             [[remarkMDXLayout, '@/app/en-US/work/wrapper', 'caseStudy']],
           ],
           
+          
         ],
       ],
     },
   })
 
   return withMDX(nextConfig)
+
+
 }

@@ -7,8 +7,8 @@ import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
 import { loadCaseStudies } from '@/lib/mdx'
 
-export default async function CaseStudyLayout({ caseStudy, children}) {
-  let allCaseStudies = await loadCaseStudies()
+export default async function CaseStudyLayout({ caseStudy, children, params: { lang }}) {
+  let allCaseStudies = await loadCaseStudies(lang)
   let moreCaseStudies = allCaseStudies
     .filter(({ metadata }) => metadata !== caseStudy)
     .slice(0, 2)
