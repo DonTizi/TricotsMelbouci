@@ -5,14 +5,13 @@ async function loadEntriesBlog(directory, metaName, lang) {
 
   return (
     await Promise.all(
-      (await glob(`${directory}/**/*.mdx`, { cwd: `src/app/${lang}` })).map(
+      (await glob(`${directory}/**/*.mdx`, { cwd: `@/app/${lang}` })).map(
         async (filename) => {
           // Supprimez le préfixe 'directory/' de 'filename' si présent
 
           // Assurez-vous que le chemin d'importation est correct en fonction de la locale.
-          console.log(`/src/app/${lang}/${filename}`); // Log le chemin complet
 
-          let metadata = (await import(`/src/app/${lang}/${filename}`))[metaName];
+          let metadata = (await import(`@/app/${lang}/${filename}`))[metaName];
           return {
             ...metadata,
             metadata,
@@ -33,7 +32,7 @@ async function loadEntriesWork(metaName, lang) {
       (await glob(`work/**/*.mdx`, { cwd: `src/app/${lang}` })).map(
         async (filename) => {
 
-          let metadata = (await import(`/src/app/${lang}/${filename}`))[metaName];
+          let metadata = (await import(`@/app/${lang}/${filename}`))[metaName];
           return {
             ...metadata,
             metadata,

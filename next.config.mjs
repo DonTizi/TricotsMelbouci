@@ -82,11 +82,11 @@ export default async function config() {
           ],
           [
             new RegExp(`^${escapeStringRegexp(path.resolve('src/app/fr/work'))}`),
-            [[remarkMDXLayout, 'src/app/fr/work/wrapper', 'caseStudy']],
+            [[remarkMDXLayout, '@/app/fr/work/wrapper', 'caseStudy']],
           ],
           [
             new RegExp(`^${escapeStringRegexp(path.resolve('src/app/en-US/work'))}`),
-            [[remarkMDXLayout, 'src/app/en-US/work/wrapper', 'caseStudy']],
+            [[remarkMDXLayout, '@/app/en-US/work/wrapper', 'caseStudy']],
 
           ],
           
