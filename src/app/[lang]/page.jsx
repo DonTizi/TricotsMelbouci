@@ -11,17 +11,19 @@ import { StylizedImage } from '@/components/StylizedImage'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 import {Clients} from '@/components/Clients'
+import { getDictionary } from './dictionaries/dictionaries'
 
 
 export const dynamic = 'force-dynamic'
 
 
 function CaseStudies({ caseStudies }) {
+
   
   return (
     <>
       <SectionIntro
-        title="Learn about our Services."
+        title="Our Services"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
 <p>
@@ -169,6 +171,7 @@ export const metadata = {
 
 export default async function Home({ params: { lang } }) {
   let caseStudies = (await loadCaseStudies(lang)).slice(0, 3)
+  const dict = await getDictionary(lang)
 
 
   return (
@@ -180,7 +183,7 @@ export default async function Home({ params: { lang } }) {
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
 
-          In the heart of Montreal, Tricots Melbouci blends the old with the new. Our local artisans pour heart into every piece, celebrating Quebec's legacy of craftsmanship. We choose natural materials and thoughtful methods to make clothes that last and honor Canada's tradition of quality.</p>
+          {dict.Homepage.Intro}</p>
         </FadeIn>
       </Container>
 

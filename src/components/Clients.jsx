@@ -5,12 +5,14 @@ import { Container } from '@/components/Container'
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import { useState } from 'react';
-import { SectionIntro } from '@/components/SectionIntro'
-import { Button } from './Button';
+import { useDictionary } from '@/components/dictionary-provider'; // Assurez-vous que le chemin est correct
+
 
 
 export function Clients() {
   const [counterStarted, setCounterStarted] = useState({ count25: false, count100: false });
+  const dict = useDictionary()
+
 
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
@@ -18,7 +20,7 @@ export function Clients() {
         <FadeIn className="flex items-center gap-x-8">
           <div className='flex-grow'>
           <h1 invert={true} className=" font-display text-3xl font-medium text-white sm:text-4xl text-left">
-          Partnering with Over{' '} 
+          {dict.Services.Title}{' '} 
              <VisibilitySensor
               active={!counterStarted.count25}
               onChange={isVisible => isVisible && setCounterStarted({ ...counterStarted, count25: true })}
