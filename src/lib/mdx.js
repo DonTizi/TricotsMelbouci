@@ -29,10 +29,9 @@ async function loadEntriesWork(metaName, lang) {
 
   return (
     await Promise.all(
-      (await glob(`work/**/*.mdx`, { cwd: `src/app/${lang}` })).map(
+      (await glob(`work/**/page.mdx`, { cwd: `src/app/${lang}` })).map(
         async (filename) => {
-
-          let metadata = (await import(`@/app/${lang}/${filename}`))[metaName];
+          let metadata = (await import(`../app/${lang}/${filename}`))[metaName];
           return {
             ...metadata,
             metadata,
