@@ -76,16 +76,16 @@ export default async function config() {
           unifiedConditional,
           [
             
-            new RegExp(`^${escapeStringRegexp(path.resolve('src/app/blog'))}`),
+            new RegExp(`^${escapeStringRegexp(path.resolve('@/app/blog'))}`),
             [[remarkMDXLayout, 'src/app/blog/wrapper', 'article']],
             
           ],
           [
-            new RegExp(`^${escapeStringRegexp(path.resolve('src/app/fr/work'))}`),
+            new RegExp(`^${escapeStringRegexp(path.resolve('@/app/fr/work'))}`),
             [[remarkMDXLayout, '@/app/fr/work/wrapper', 'caseStudy']],
           ],
           [
-            new RegExp(`^${escapeStringRegexp(path.resolve('src/app/en-US/work'))}`),
+            new RegExp(`^${escapeStringRegexp(path.resolve('@/app/en-US/work'))}`),
             [[remarkMDXLayout, '@/app/en-US/work/wrapper', 'caseStudy']],
 
           ],
