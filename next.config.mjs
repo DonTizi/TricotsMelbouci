@@ -20,6 +20,11 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  experimental:{
+    outputFileTracingIncludes:{
+      '/**/*': ['src/**/*']
+    }
+  }
 
 }
 
@@ -77,7 +82,7 @@ export default async function config() {
           [
             
             new RegExp(`^${escapeStringRegexp(path.resolve('src/app/blog'))}`),
-            [[remarkMDXLayout, 'src/app/blog/wrapper', 'article']],
+            [[remarkMDXLayout, '@/app/blog/wrapper', 'article']],
             
           ],
           [

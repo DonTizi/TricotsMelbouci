@@ -16,14 +16,6 @@ const navigation = [
       { title: 'Custom Design', href: '/work/family-fund' },
       { title: 'Fabric Sourcing', href: '/work/unseal' },
       { title: 'Consultation', href: '/work/phobia' },
-      {
-        title: (
-          <>
-            See all <span aria-hidden="true">&rarr;</span>
-          </>
-        ),
-        href: '/work',
-      },
     ],
   },
   {
