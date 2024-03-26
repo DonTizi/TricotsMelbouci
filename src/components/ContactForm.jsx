@@ -4,9 +4,12 @@ import { useForm, ValidationError } from '@formspree/react';
 import { Button } from '@/components/Button'
 import { FadeIn } from '@/components/FadeIn'
 import { useId } from 'react'
+import { useDictionary } from '@/components/dictionary-provider'; // Assurez-vous que le chemin est correct
+
 
 function TextInput({ label, ...props }) {
     let id = useId()
+    
   
     return (
       <div className="group relative z-0 transition-all focus-within:z-10">
@@ -28,6 +31,8 @@ function TextInput({ label, ...props }) {
   }
 
 export function ContactForm() {
+  const dict = useDictionary()
+
     const [state, handleSubmit] = useForm("meqygver");
     if (state.succeeded) {
         return <h2 className="font-display text-base font-semibold text-neutral-950">
@@ -39,7 +44,7 @@ export function ContactForm() {
         <form
           onSubmit={handleSubmit}>
           <h2 className="font-display text-base font-semibold text-neutral-950">
-            Work inquiries
+           {dict.ContactFooter.inquiries}
           </h2>
           <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
             <TextInput label="Name" name="name" autoComplete="name" />
@@ -68,7 +73,7 @@ export function ContactForm() {
            />
           </div>
           <Button type="submit" disabled={state.submitting} className="mt-10">
-            Let’s work together
+          {dict.ContactFooter.together}
           </Button>
         </form>
       </FadeIn>

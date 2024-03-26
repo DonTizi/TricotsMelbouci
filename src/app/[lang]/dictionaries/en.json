@@ -18,7 +18,15 @@
       "Button":"Contact us",
       "Bureau": "Our offices",
       "Ville":"Montreal",
-      "Adresse":"9050 Av du Parc, Montréal, QC H2N 1Y8"
+      "Adresse":"9050 Av du Parc, Montréal, QC H2N 1Y8",
+      "Email":"Email us",
+      "travail":"Let’s work together",
+      "wait":"We can’t wait to hear from you",
+      "inquiries":"Work inquiries",
+      "together":"Let's work together"
+
+
+
 
 
     },
