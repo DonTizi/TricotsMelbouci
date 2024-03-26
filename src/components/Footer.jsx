@@ -1,3 +1,4 @@
+'use client'
 
 import Link from 'next/link'
 
@@ -6,34 +7,40 @@ import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
 import React, { useState } from 'react';
+import { useDictionary } from '@/components/dictionary-provider'; // Assurez-vous que le chemin est correct
 
 
 
-const navigation = [
-  {
-    title: 'Work',
-    links: [
-      { title: 'Custom Design', href: '/work/family-fund' },
-      { title: 'Fabric Sourcing', href: '/work/unseal' },
-      { title: 'Consultation', href: '/work/phobia' },
-    ],
-  },
-  {
-    title: 'Company',
-    links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
-      { title: 'Contact us', href: '/contact' },
-    ],
-  },
-  {
-    title: 'Connect',
-    links: socialMediaProfiles,
-  },
-]
+
 
 function Navigation() {
+    const dict = useDictionary()
+    const navigation = [
+  
+      {
+        title: dict.Root.Work,
+        links: [
+          { title: dict.Root.DesignP, href: '/work/family-fund' },
+          { title: dict.Root.Tissu, href: '/work/unseal' },
+          { title: dict.Root.DesignG, href: '/work/phobia' },
+        ],
+      },
+      {
+        title: dict.Root.Company,
+        links: [
+          { title: dict.Root.About, href: '/about' },
+          { title: dict.Root.Process, href: '/process' },
+          { title: dict.Root.Blog, href: '/blog' },
+          { title: dict.Root.ContactF, href: '/contact' },
+        ],
+      },
+      {
+        title: dict.Root.Connect,
+        links: socialMediaProfiles,
+      },
+    ]
+
+  
   return (
     <nav>
       <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
@@ -75,6 +82,8 @@ function ArrowIcon(props) {
 }
 
 function NewsletterForm() {
+  const dict = useDictionary()
+
   // État pour gérer l'affichage du message de remerciement
   const [isSubmitted, setIsSubmitted] = useState(false);
   
@@ -100,19 +109,18 @@ function NewsletterForm() {
     <div>
       <form className="max-w-sm" onSubmit={handleSubmit}>
         <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-          Sign up for our newsletter
+         {dict.Root.Newsletter}
         </h2>
         <p className="mt-4 text-sm text-neutral-700">
-          Subscribe to get the latest design news, articles, resources, and
-          inspiration.
+          {dict.Root.NewsDescription}
         </p>
         <div className="relative mt-6">
           <input
             name="EMAIL"
             type="email"
-            placeholder="Email address"
+            placeholder={dict.Root.Email}
             autoComplete="email"
-            aria-label="Email address"
+            aria-label={dict.Root.Email}
             required
             className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
           />

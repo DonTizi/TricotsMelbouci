@@ -1,14 +1,12 @@
 
-import Image from 'next/image'
 import Link from 'next/link'
-
+import {CaseStudies} from '@/components/Cases'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
-import { List, ListItem } from '@/components/List'
+import { FadeIn } from '@/components/FadeIn'
+
 import { SectionIntro } from '@/components/SectionIntro'
-import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
+
 import { loadCaseStudies } from '@/lib/mdx'
 import {Clients} from '@/components/Clients'
 import { getDictionary } from './dictionaries/dictionaries'
@@ -17,49 +15,7 @@ import { getDictionary } from './dictionaries/dictionaries'
 export const dynamic = 'force-dynamic'
 
 
-function CaseStudies({ caseStudies }) {
 
-  
-  return (
-    <>
-      <SectionIntro
-        title="Our Services"
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-<p>
-  {"Explore Our Services. Make something special with Tricots Melbouci. Our team is here to help you pick the perfect fabric for a look that's all your own. Start your custom knitwear project with us today."}
-</p>
-
-      </SectionIntro>
-      <Container className="mt-16">
-        <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {caseStudies.map((caseStudy) => (
-            <FadeIn key={caseStudy.href} className="flex">
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
-                <h3>
-                  <Link href={caseStudy.href}>
-                    <span className="absolute inset-0 rounded-3xl" />
-                  </Link>
-                </h3>
-                <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-                  <span className="text-neutral-300" aria-hidden="true">
-                    /
-                  </span>
-                </p>
-                <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
-                  {caseStudy.title}
-                </p>
-                <p className="mt-4 text-base text-neutral-600">
-                  {caseStudy.description}
-                </p>
-              </article>
-            </FadeIn>
-          ))}
-        </FadeInStagger>
-      </Container>
-    </>
-  )
-}
 /*
   This example requires some changes to your config:
   

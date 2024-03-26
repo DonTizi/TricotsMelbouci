@@ -20,6 +20,7 @@ import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
+import { useDictionary } from '@/components/dictionary-provider'; // Assurez-vous que le chemin est correct
 
 const RootLayoutContext = createContext(null)
 
@@ -49,6 +50,7 @@ function Header({
   invert = false,
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)
+  const dict = useDictionary()
 
   return (
     <Container>
@@ -72,7 +74,7 @@ function Header({
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>
-            Contact us
+            {dict.Root.ContactF}
           </Button>
           <button
             ref={toggleRef}
@@ -102,6 +104,8 @@ function Header({
 }
 
 function NavigationRow({ children }) {
+  const dict = useDictionary()
+
   return (
     <div className="even:mt-px sm:bg-neutral-950">
       <Container>
@@ -124,15 +128,17 @@ function NavigationItem({ href, children }) {
 }
 
 function Navigation() {
+  const dict = useDictionary()
+
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/gallery">Gallery</NavigationItem>
-        <NavigationItem href="/about">About Us</NavigationItem>
+        <NavigationItem href="/gallery">{dict.RootLayout.Gallery}</NavigationItem>
+        <NavigationItem href="/about">{dict.RootLayout.About}</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
+        <NavigationItem href="/process">{dict.RootLayout.Process}</NavigationItem>
+        <NavigationItem href="/blog">{dict.RootLayout.Blog}</NavigationItem>
       </NavigationRow>
     </nav>
   )
@@ -145,6 +151,8 @@ function RootLayoutInner({ children }) {
   let closeRef = useRef(null)
   let navRef = useRef(null)
   let shouldReduceMotion = useReducedMotion()
+  const dict = useDictionary()
+
 
   useEffect(() => {
     function onClick(event) {
@@ -215,7 +223,7 @@ function RootLayoutInner({ children }) {
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                   <div>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
+                      {dict.RootLayout.Office}
                     </h2>
                     <Offices
                       invert
@@ -224,7 +232,7 @@ function RootLayoutInner({ children }) {
                   </div>
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-white">
-                      Follow us
+                      {dict.RootLayout.Follow}
                     </h2>
                     <SocialMedia className="mt-6" invert />
                   </div>

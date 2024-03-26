@@ -8,7 +8,6 @@ import { useState } from 'react';
 import { useDictionary } from '@/components/dictionary-provider'; // Assurez-vous que le chemin est correct
 
 
-
 export function Clients() {
   const [counterStarted, setCounterStarted] = useState({ count25: false, count100: false });
   const dict = useDictionary()
@@ -20,7 +19,7 @@ export function Clients() {
         <FadeIn className="flex items-center gap-x-8">
           <div className='flex-grow'>
           <h1 invert={true} className=" font-display text-3xl font-medium text-white sm:text-4xl text-left">
-          {dict.Services.Title}{' '} 
+          {dict.Clients.Partenariat}{' '} 
              <VisibilitySensor
               active={!counterStarted.count25}
               onChange={isVisible => isVisible && setCounterStarted({ ...counterStarted, count25: true })}
@@ -32,7 +31,7 @@ export function Clients() {
                 )}
               </CountUp>
             </VisibilitySensor>
-            + Renowned Brands, We've Successfully Executed More Than {' '} 
+            {dict.Clients.Marques} {' '} 
             <VisibilitySensor
               active={!counterStarted.count100}
               onChange={isVisible => isVisible && setCounterStarted({ ...counterStarted, count100: true })}
@@ -44,7 +43,7 @@ export function Clients() {
                 )}
               </CountUp>
             </VisibilitySensor>
-            +{' '}  Diverse Projects in 2023 Alone.
+            +{' '}  {dict.Clients.Projets}
           </h1>
           </div>
 

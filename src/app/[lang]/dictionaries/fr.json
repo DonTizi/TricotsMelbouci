@@ -1,9 +1,161 @@
 {
     "Homepage": {
-      "Intro": "In the heart of Montreal, Tricots Melbouci blends the old with the new. Our local artisans pour heart into every piece, celebrating Quebec's legacy of craftsmanship. We choose natural materials and thoughtful methods to make clothes that last and honor Canada's tradition of quality.      "
+      "Intro": "Au coeur de Montréal, Tricots Melbouci mélange l'ancien et le nouveau. Nos artisans locaux mettent du cœur dans chaque pièce, célébrant l'héritage artisanal du Québec. Nous choisissons des matériaux naturels et des méthodes réfléchies pour fabriquer des vêtements qui durent et honorent la tradition de qualité du Canada."
     },
 
     "Services":{
-      "Title":" Nos services."
-    }
-  }
+      "Title":" Nos services.",
+      "Description":"Découvrez nos services. Créez quelque chose de spécial avec Tricots Melbouci. Notre équipe est là pour vous aider à choisir le tissu parfait pour un look qui vous ressemble. Commencez votre projet de tricots personnalisés avec nous dès aujourd'hui."
+    },
+
+    "Clients":{
+      "Partenariat":"en partenariat avec plus de",
+      "Marques":"+ Marques renommées, nous avons exécuté avec succès plus de",
+      "Projets": "Divers projets rien qu’en 2023."
+    },
+
+    "ContactFooter":{
+      "Projet":"Parlez nous de votre projet",
+      "Button":"Contactez-nous",
+      "Bureau": "Nos bureaux",
+      "Ville":"Montréal",
+      "Adresse":"9050 Av du Parc, Montréal, QC H2N 1Y8"
+
+
+    },
+    "Root":{
+      "Work":"Services",
+      "DesignP":"Design personalisé",
+      "Tissu":"Sourcing de tissus",
+      "DesignG":"Consultation",
+
+      "Company":"Entreprise",
+      "About":"À propos",
+      "Process":"Processus",
+      "Blog":"Blog",
+      "ContactF":"Contactez-nous",
+
+      "Connect":"Connecter",
+
+      "Newsletter":"Inscrivez-vous à notre newsletter",
+      "NewsDescription":"Abonnez-vous pour recevoir les dernières actualités, articles, ressources et inspirations en matière de design.",
+      "Email":"Adresse e-mail"
+
+    },
+
+      "RootLayout": {
+        "Gallery": "Galerie",
+        "About": "À propos de nous",
+        "Process": "Notre processus",
+        "Blog": "Blog",
+        "Office": "Nos bureaux",
+        "Follow": "Suivez-nous"
+      },
+      
+        "Culture": {
+            "Eyebrow": "Notre culture",
+            "Title": "Équilibrez votre passion avec votre passion pour la vie.",
+            "Description": "Nous sommes un groupe de personnes partageant les mêmes valeurs fondamentales.",
+
+
+            "Title1": "Loyauté",
+            "Description1": "Notre dévouement à la loyauté se reflète dans nos relations durables avec les clients et les partenaires, basées sur une fondation de confiance et une passion partagée pour l'artisanat de qualité dans l'art textile.",
+
+
+            "Title2": "Confiance",
+            "Description2": "La confiance est au cœur de tout ce que nous faisons, favorisant une culture de fiabilité et d'intégrité qui résonne à travers nos créations textiles authentiques et de haute qualité.",
+
+          
+            "Title3": "Compassion",
+            "Description3": "Dans chaque point et chaque motif, nous incarnons la compassion, confectionnant chaque pièce avec une compréhension des désirs de nos clients et un profond respect pour la tradition artisanale textile.",
+            "Decades": "Héritage de plusieurs décennies dans le textile",
+            "Sucesseur": "En tant que fier successeur de Tricots Capraro, un nom synonyme d'artisanat textile depuis des décennies, Tricots Melbouci, dirigé par Houria Melbouci, incarne le véritable esprit d'une entreprise familiale canadienne.",
+            "commitment":"Notre engagement chez Tricots Melbouci est de produire des tricots de haute qualité, fabriqués localement, alliant les principes de durabilité et d'efficacité.",
+            "heritage":"Fidèles à un riche héritage, chez Tricots Melbouci, nous mélangeons harmonieusement l'expertise traditionnelle avec une approche moderne pour répondre aux besoins textiles contemporains.",
+            "members":"Membres",
+            "blogtitle":"Du blog",
+            "blogdescription":"Jetez un œil à notre blog, où nous tissons ensemble des histoires de talent artistique, d'innovation et de beauté intemporelle des tricots, reflétant l'essence de notre passion pour l'artisanat textile."
+        },
+        "DiscoverSection": {
+          "Title": "Phase de Découverte",
+          "Description": "Dans la première étape, nous discutons avec vous de votre vision. Nous vous montrerons différents styles pour déterminer ce que vous aimez et ce que vous n'aimez pas. Cela nous aide à comprendre exactement ce que vous recherchez dans votre tricot, en garantissant que la pièce finale soit parfaitement adaptée à vos préférences.",
+          "PhaseTitle": "Inclus dans cette phase",
+          "Tags": {
+            "StylePreferences": "Préférences de Style",
+            "ClientInspiration": "Inspiration du Client",
+            "FashionModels": "Modèles de Mode",
+            "BespokeKnitwearDesigning": "Conception de Tricot Sur Mesure"
+          }
+        },
+        "BuildSection": {
+          "Title": "Sourcing et Sélection de Tissus",
+          "Description": "Ensuite, nous nous concentrons sur la recherche du bon matériel. Si vous n'êtes pas sûr du tissu que vous voulez, nous vous aiderons à choisir la meilleure option. Notre sélection inclut des tissus de haute qualité tels que l'alpaga bébé, le mérinos, le cachemire, et le coton biologique, sans oublier d'autres fils polyvalents comme le polyester, le nylon, et le bambou biologique, parmi d'autres. Notre objectif est de sélectionner le textile parfait qui répond à vos besoins et améliore la qualité de votre tricot, assurant à la fois confort et style.",
+          "Blockquote": {
+            "Text": "Nous disposons d'un catalogue complet pour différents types de besoins et nous sommes très attentifs à la qualité de nos textiles.",
+            "Author": "Houria Cheurfi",
+            "Role": "PDG de Tricots Melbouci"
+          },
+          "Tags": {
+            "Cashmere": "Cachemire",
+            "OrganicCotton": "Coton Biologique",
+            "Polyester": "Polyester",
+            "OrganicBamboo": "Bambou Biologique",
+            "BabyAlpaca": "Bébé Alpaga ",
+            "Merino": "Mérinos"
+          }
+        },
+        "DeliverSection": {
+          "Title": "Conceptualisation et Design",
+          "Description": "Enfin, nous donnons vie à votre idée. Nous utilisons notre logiciel M1+ pour créer un motif détaillé de votre design. Nos experts travaillent minutieusement pour s'assurer que tout est parfait. Ensuite, nous utilisons nos machines industrielles Stoll pour commencer le processus de tricotage. Une fois que nous avons terminé, nous vous montrerons le résultat pour nous assurer que vous êtes entièrement satisfait de votre pièce de tricot unique.",
+          "PhaseTitle": "Inclus dans cette phase",
+          "Tags": {
+            "M1SoftwareDesign": "Conception logicielle M1+",
+            "KnittingTechnology": "Technologie du tricotage",
+            "StollIndustrialKnitting": "Tricotage industriel Stoll",
+            "DesignExpertise": "Expertise en design",
+            "CustomKnitwearCreation": "Création de tricot sur mesure"
+          }
+        },
+        "ValuesSection": {
+          "how":"Comment nous travaillons",
+          "ProcessDescription":"Nous fabriquons chaque pièce avec un mélange d'idées nouvelles et de traditions anciennes, en nous concentrant sur un travail soigné et un amour pour les tricots durables et de qualité.",
+          "Eyebrow": "Nos valeurs",
+          "Title": "Équilibrer fiabilité et innovation",
+          "Description": "Nous équilibrons magistralement fiabilité et innovation, assurant que chaque pièce de tricot reflète notre engagement durable envers une qualité fiable tout en embrassant des conceptions avant-gardistes.",
+          "Values": {
+            "SustainabilityTitle": "Durabilité",
+            "SustainabilityDescription": "Adopter des pratiques écologiques pour protéger notre planète.",
+            "CraftsmanshipTitle": "Artisanat",
+            "CraftsmanshipDescription": "Valoriser le savoir-faire artisanal dans chaque tricot.",
+            "QualityTitle": "Qualité",
+            "QualityDescription": "Garantir des matériaux de première qualité et une durabilité.",
+            "TransparencyTitle": "Transparence",
+            "TransparencyDescription": "Être transparent concernant nos pratiques et nos sources.",
+            "InnovationTitle": "Innovation",
+            "InnovationDescription": "Allier tradition et techniques modernes.",
+            "CommunityTitle": "Communauté",
+            "CommunityDescription": "Construire des relations fortes et respectueuses."
+          }
+        },
+        "Blog": {
+          "Title": "Les derniers articles et actualités",
+          "Description": "Plongez dans nos derniers articles et nouvelles, mettant en avant les tendances les plus récentes, les innovations, et les histoires du monde du tricot artisanal et de l'artisanat textile durable.",
+          "Published": "Publié",
+          "Author": "Auteur",
+          "Read": "Lire la suite"
+        },
+        "MyApp": {
+          "SectionIntro1": {
+            "Title": "Finitions de Vêtements, Colliers de mode et Brassards.",
+            "Description": "Nos colliers tricotés sont disponibles dans une gamme de matériaux de fils, y compris le coton, le polyester, l'acrylique, et plus encore. En conséquence, ils offrent une qualité supérieure, une durabilité, et des couleurs vibrantes par rapport aux principaux détaillants. De plus, nous pouvons accommoder d'autres combinaisons de matériaux sur demande."
+          },
+          "SectionIntro2": {
+            "Title": "Tissus, Jacquard et Côtes.",
+            "Description": "Tricot Melbouci offre l'opportunité de créer le tissu de votre choix adapté à vos préférences. Notre gamme variée de machines nous permet de produire une variété infinie de tissus tricotés, accueillant tout motif ou design que vous avez en tête."
+          },
+          "SectionIntro3": {
+            "Title": "Accessoires, Écharpes et Bonnets.",
+            "Description": "Grâce à notre expertise et à nos machines de pointe, Tricot Melbouci est capable de créer les meilleurs accessoires tricotés pour vous, que ce soit des écharpes ou des chapeaux. Cela est réalisable avec une variété de fils, y compris le coton, le bambou, l'alpaga bébé, le mérinos, ou le cachemire."
+          }
+        }
+      }

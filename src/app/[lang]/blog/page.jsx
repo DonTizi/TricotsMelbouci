@@ -9,6 +9,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
+import { getDictionary } from '../dictionaries/dictionaries'
 
 export const metadata = {
   title: 'Blog',
@@ -16,15 +17,16 @@ export const metadata = {
     "Discover all the latest news, trends, and tips related to knitting! We'll discuss various important topics related to our textures and know-how.",
 }
 
-export default async function Blog() {
+export default async function Blog({ params: { lang } }) {
   let articles = await loadArticles()
+  const dict = await getDictionary(lang)
+
 
   return (
     <>
-      <PageIntro eyebrow="Blog" title="The latest articles and news">
+      <PageIntro eyebrow="Blog" title={dict.Blog.Title}>
         <p>
-        Dive into our latest articles and news, showcasing the newest trends, innovations, and stories from the world of artisanal knitting and sustainable textile craftsmanship.
-        </p>
+        {dict.Blog.Description}        </p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
@@ -39,13 +41,13 @@ export default async function Blog() {
                         <Link href={article.href}>{article.title}</Link>
                       </h2>
                       <dl className="lg:absolute lg:left-0 lg:top-0 lg:w-1/3 lg:px-4">
-                        <dt className="sr-only">Published</dt>
+                        <dt className="sr-only">{dict.Blog.Published}</dt>
                         <dd className="absolute left-0 top-0 text-sm text-neutral-950 lg:static">
                           <time dateTime={article.date}>
                             {formatDate(article.date)}
                           </time>
                         </dd>
-                        <dt className="sr-only">Author</dt>
+                        <dt className="sr-only">{dict.Blog.Author}</dt>
                         <dd className="mt-6 flex gap-x-4">
                           <div className="flex-none overflow-hidden rounded-xl bg-neutral-100">
                             <Image
@@ -70,7 +72,7 @@ export default async function Blog() {
                         aria-label={`Read more: ${article.title}`}
                         className="mt-8"
                       >
-                        Read more
+                        {dict.Blog.Read}
                       </Button>
                     </div>
                   </div>

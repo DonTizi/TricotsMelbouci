@@ -4,6 +4,165 @@
     },
 
     "Services":{
-      "Title":" Our services."
+      "Title":" Our services.",
+      "Description":"Explore Our Services. Make something special with Tricots Melbouci. Our team is here to help you pick the perfect fabric for a look that's all your own. Start your custom knitwear project with us today."
+
+    },
+    "Clients":{
+      "Partenariat":"Partnering with Over",
+      "Marques":"+ Renowned Brands, We've Successfully Executed More Than",
+      "Projets": "+ Diverse Projects in 2023 Alone."
+    },
+    "ContactFooter":{
+      "Projet":"Tell us about your project",
+      "Button":"Contact us",
+      "Bureau": "Our offices",
+      "Ville":"Montreal",
+      "Adresse":"9050 Av du Parc, Montréal, QC H2N 1Y8"
+
+
+    },
+    "Root":{
+      "Work":"Work",
+      "DesignP":"Custom Design",
+      "Tissu":"Fabric Sourcing",
+      "DesignG":"Consultation",
+
+      "Company":"Company",
+      "About":"About",
+      "Process":"Process",
+      "Blog":"Blog",
+      "ContactF":"Contact us",
+
+      "Connect":"Connect",
+
+      "Newsletter":"Sign up for our newsletter",
+      "NewsDescription":"Subscribe to get the latest design news, articles, resources, and inspiration.",
+      "Email":"Email address"
+
+
+    },
+
+    "RootLayout":{
+      "Gallery":"Gallery",
+      "About":"About Us",
+      "Process":"Our Process",
+      "Blog":"Blog",
+      "Office":"Our offices",
+      "Follow":"Follow us"
+
+    },
+    "Culture": {
+
+        "Eyebrow": "Our culture",
+        "Title": "Balance your passion with your passion for life.",
+        "Description": "We are a group of like-minded people who share the same core values.",
+
+        "Title1": "Loyalty",
+        "Description1": "Our dedication to loyalty is reflected in our enduring relationships with clients and partners, built on a foundation of trust and a shared passion for quality craftsmanship in textile art.",
+
+
+        "Title2": "Trust",
+        "Description2": "Trust is at the core of everything we do, fostering a culture of reliability and integrity that resonates through our authentic, high-quality textile creations.",
+
+
+        "Title3": "Compassion",
+        "Description3": "In every stitch and pattern, we embody compassion, crafting each piece with an understanding of our customers' desires and a deep respect for the artisanal textile tradition.",
+
+        "Decades":"Decades Legacy of Textile",
+        "Sucesseur": "As the proud successor of Tricots Capraro, a name synonymous with textile craftsmanship for decades, Tricots Melbouci, led by Houria Melbouci, embodies the true spirit of a canadian family-run enterprise.",
+        "commitment":"Our commitment at Tricots Melbouci is to produce high-quality, locally-made knitwear, combining the principles of sustainability and efficiency.",
+        "heritage":"Upholding a rich heritage, we at Tricots Melbouci seamlessly blend traditional expertise with a modern approach to meet contemporary textile needs.",
+        "members":"Members",
+        "blogtitle":"From the blog",
+        "blogdescription":"Have a look on our blog, where we weave together stories of artistry, innovation, and the timeless beauty of knitwear, reflecting the essence of our passion for textile craftsmanship."
+    },
+
+    
+      "DiscoverSection": {
+        "Title": "Talking Stage",
+        "Description": "In the first step, we chat with you about your vision. We'll show you different styles to figure out what you like and what you don't. This helps us understand exactly what you're looking for in your knitwear, ensuring the final piece is perfectly tailored to your preferences.",
+        "PhaseTitle": "Included in this phase",
+        "Tags": {
+          "StylePreferences": "Style Preferences",
+          "ClientInspiration": "Client Inspiration",
+          "FashionModels": "Fashion Models",
+          "BespokeKnitwearDesigning": "Bespoke Knitwear Designing"
+        }
+      
+    },
+    "BuildSection": {
+      "Title": "Fabric Sourcing and Selection",
+      "Description": "Next, we focus on finding the right material. If you're not sure which fabric you want, we'll help you choose the best option. Our selection includes high-quality fabrics such as baby alpaca, merino, cashmere, and organic cotton, without forgetting other versatile threads like polyester, nylon, and organic bamboo, among others. Our goal is to select the perfect textile that meets your needs and enhances the quality of your knitwear, ensuring both comfort and style.",
+      "Blockquote": {
+        "Text": "We have a complete catalog for different types of needs and we are very attentive to the quality of our textiles.",
+        "Author": "Houria Cheurfi",
+        "Role": "CEO of Tricots Melbouci"
+      },
+      "Tags": {
+        "Cashmere": "cashmere",
+        "OrganicCotton": "organic cotton",
+        "Polyester": "polyester",
+        "OrganicBamboo": "organic bamboo",
+        "BabyAlpaca": "baby alpaca",
+        "Merino": "merino"
+      }
+    },
+    "DeliverSection": {
+      "Title": "Conceptualization and Design",
+      "Description": "Finally, we bring your idea to life. We use our M1+ Software to create a detailed pattern of your design. Our experts work meticulously to ensure everything is just right. Then, we use our Stoll industrial machines to start the knitting process. Once we've finished, we'll show you the result to make sure you're completely satisfied with your unique piece of knitwear.",
+      "PhaseTitle": "Included in this phase",
+      "Tags": {
+        "M1SoftwareDesign": "M1+ Software Design",
+        "KnittingTechnology": "Knitting Technology",
+        "StollIndustrialKnitting": "Stoll Industrial Knitting",
+        "DesignExpertise": "Design Expertise",
+        "CustomKnitwearCreation": "Custom Knitwear Creation"
+      }
+    },
+    "ValuesSection": {
+      "how":"How we work",
+      "ProcessDescription":"We make every piece with a mix of new ideas and old traditions, focusing on careful work and a love for long-lasting, quality knitwear.",
+      "Eyebrow": "Our values",
+      "Title": "Balancing reliability and innovation",
+      "Description": "We masterfully balance reliability and innovation, ensuring each piece of knitwear reflects our enduring commitment to dependable quality while embracing forward-thinking designs.",
+      "Values": {
+        "SustainabilityTitle": "Sustainability",
+        "SustainabilityDescription": "Embrace eco-friendly practices to protect our planet.",
+        "CraftsmanshipTitle": "Craftsmanship",
+        "CraftsmanshipDescription": "Value artisan skill in every knit.",
+        "QualityTitle": "Quality",
+        "QualityDescription": "Ensure top-notch materials and durability.",
+        "TransparencyTitle": "Transparency",
+        "TransparencyDescription": "Be open about our practices and sources.",
+        "InnovationTitle": "Innovation",
+        "InnovationDescription": "Blend tradition with modern techniques.",
+        "CommunityTitle": "Community",
+        "CommunityDescription": "Build strong, respectful relationships."
+      }
+    },
+    "Blog":{
+      "Title":"The latest articles and news",
+      "Description":"Dive into our latest articles and news, showcasing the newest trends, innovations, and stories from the world of artisanal knitting and sustainable textile craftsmanship.",
+      "Published":"Published",
+      "Author":"Author",
+      "Read":"Read more"
+
+    },
+    "MyApp": {
+      "SectionIntro1": {
+        "Title": "Apparel Trimming, Fashion collars and arm bands.",
+        "Description": "Our knitted collars are available in a range of yarn materials, including cotton, polyester, acrylic, and more. As a result, they offer superior quality, durability, and vibrant colors compared to leading retailers. Additionally, we can accommodate other material combinations upon request."
+      },
+      "SectionIntro2": {
+        "Title": "Fabrics, Jacquard and Ribs.",
+        "Description": "Tricot Melbouci provides the opportunity to craft the fabric of your choice tailored to your preferences. Our versatile array of machines enables us to produce an endless variety of knitted fabrics, accommodating any pattern or design you have in mind."
+      },
+      "SectionIntro3": {
+        "Title": "Accessories, Scarves and beanies.",
+        "Description": "Thanks to our expertise and state-of-the-art machinery, Tricot Melbouci is capable of crafting the finest knitted accessories for you, be it scarves or hats. This is achievable with a variety of yarns, including cotton, bamboo, baby alpaca, merino, or cashmere."
+      }
     }
+    
   }
+  
