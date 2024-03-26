@@ -23,6 +23,7 @@ const nextConfig = {
   experimental:{
     outputFileTracingIncludes:{
       '/**/*': ['src/**/*']
+
     }
   }
 
@@ -86,11 +87,12 @@ export default async function config() {
             
           ],
           [
-            new RegExp(`^${escapeStringRegexp(path.resolve('src/app/fr/work'))}`),
+            new RegExp(`^${escapeStringRegexp(path.resolve('src/app/fr/work/'))}`),
             [[remarkMDXLayout, '@/app/fr/work/wrapper', 'caseStudy']],
+
           ],
           [
-            new RegExp(`^${escapeStringRegexp(path.resolve('src/app/en-US/work'))}`),
+            new RegExp(`^${escapeStringRegexp(path.resolve('src/app/en-US/work/'))}`),
             [[remarkMDXLayout, '@/app/en-US/work/wrapper', 'caseStudy']],
 
           ],
