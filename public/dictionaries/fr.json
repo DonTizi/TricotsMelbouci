@@ -150,6 +150,10 @@
           "Author": "Auteur",
           "Read": "Lire la suite"
         },
+
+        "Gallery":{
+          "News": "Nouveautés"
+        },
         "MyApp": {
           "SectionIntro1": {
             "Title": "Finitions de Vêtements, Collets et Brassards.",

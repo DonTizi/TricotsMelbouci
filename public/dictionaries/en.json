@@ -157,6 +157,10 @@
       "Read":"Read more"
 
     },
+
+    "Gallery":{
+      "News": "New Arrivals"
+    },
     "MyApp": {
       "SectionIntro1": {
         "Title": "Apparel Trimming, Fashion collars and arm bands.",
