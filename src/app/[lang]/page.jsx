@@ -10,6 +10,7 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { loadCaseStudies } from '@/lib/mdx'
 import {Clients} from '@/components/Clients'
 import { getDictionary } from './dictionaries/dictionaries'
+import { englishMetadata, frenchMetadata } from '@/metadata/page';
 
 
 export const dynamic = 'force-dynamic'
@@ -116,12 +117,7 @@ function Collection() {
 
 
 
-const englishMetadata = {
-  description: 'Discover our Knitting manufacturing in Montreal, specializing in natural fiber production: Knitting in wool, cashmere, cotton, and more.',
-};
-const frenchMetadata = {
-  description: 'Découvrez notre fabrication de tricot à Montréal, spécialisée dans la production de fibres naturelles : tricot en laine, cachemire, coton, et plus encore.',
-};
+
 
 // Dans votre page Next.js
 

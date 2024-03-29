@@ -11,6 +11,7 @@ import { SocialMedia } from '@/components/SocialMedia'
 import {ContactForm} from '@/components/ContactForm'
 import { getDictionary } from '../dictionaries/dictionaries'
 import { ContactDetails } from '@/components/ContactClient';
+import { englishMetadata, frenchMetadata } from '@/metadata/contact';
 
 function TextInput({ label, ...props }) {
   let id = useId()
@@ -37,15 +38,7 @@ function TextInput({ label, ...props }) {
 
 
 
-export const englishMetadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
-}
 
-export const frenchMetadata = {
-  title: 'Contactez-nous',
-  description: 'Travaillons ensemble. Nous avons hâte de vous entendre.',
-}
 
 export async function generateMetadata({ params }) {
   return params.lang === "en-US" ? englishMetadata : frenchMetadata;
