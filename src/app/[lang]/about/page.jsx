@@ -8,11 +8,21 @@ import { Culture } from '@/components/Culture'
 import { getDictionary } from '../dictionaries/dictionaries'
 
 
-
-export const metadata = {
+export const englishMetadata = {
   title: 'About Us',
   description:
-    'our strength lies in collaboration, uniting diverse skills and ideas to craft exceptional knitwear that stands at the crossroads of creativity and artisanal excellence.',
+    'Our strength lies in collaboration, uniting diverse skills and ideas to craft exceptional knitwear that stands at the crossroads of creativity and artisanal excellence.',
+}
+
+export const frenchMetadata = {
+  title: 'À Propos',
+  description:
+    'Notre force réside dans la collaboration, unissant diverses compétences et idées pour créer des tricots exceptionnels qui se situent au carrefour de la créativité et de l’excellence artisanale.',
+}
+
+
+export async function generateMetadata({ params }) {
+  return params.lang === "en-US" ? englishMetadata : frenchMetadata;
 }
 
 export default async function About({ params: { lang } }) {

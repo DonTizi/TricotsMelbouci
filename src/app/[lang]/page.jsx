@@ -116,14 +116,19 @@ function Collection() {
 
 
 
+const englishMetadata = {
+  description: 'Discover our Knitting manufacturing in Montreal, specializing in natural fiber production: Knitting in wool, cashmere, cotton, and more.',
+};
+const frenchMetadata = {
+  description: 'Découvrez notre fabrication de tricot à Montréal, spécialisée dans la production de fibres naturelles : tricot en laine, cachemire, coton, et plus encore.',
+};
 
+// Dans votre page Next.js
 
-
-
-export const metadata = {
-  description:
-    'Discover our textile manufacturing in Montreal, specializing in natural fiber production: Knitting in wool, cashmere, cotton, and more.',
+export async function generateMetadata({ params }) {
+  return params.lang === "en-US" ? englishMetadata : frenchMetadata;
 }
+
 
 export default async function Home({ params: { lang } }) {
   let caseStudies = (await loadCaseStudies('en-US')).slice(0, 3)
