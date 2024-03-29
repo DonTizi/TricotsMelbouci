@@ -2,11 +2,13 @@
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
-import {ScrollImg} from '@/components/Colls'
-import {Textures} from '@/components/Textures'
-import {Echarpes} from '@/components/Echarpes'
-import { useDictionary } from '@/components/dictionary-provider'; // Assurez-vous que le chemin est correct
+import {ImageSlider} from '@/components/ImageSlider'
+import {IMAGES} from "./EcharpeImg";
+import { TextureImg } from './TexturesImg'
+import { ColsImg } from './ColsImg'
 
+import { useDictionary } from '@/components/dictionary-provider'; // Assurez-vous que le chemin est correct
+import './ImageSlider.css'
 
 export function MyApp({}) {
   const dict = useDictionary()
@@ -21,11 +23,11 @@ export function MyApp({}) {
       
       </Container >
       <Container className="w-full h-full">
-        <ScrollImg/>
+      <ImageSlider images={ColsImg} slidesToShow={5}/>
         <SectionIntro title={dict.MyApp.SectionIntro2.Title}
         className="mt-24 sm:mt-32 lg:mt-40"
       > {dict.MyApp.SectionIntro2.Description}</SectionIntro>
-          <Textures/>
+        <ImageSlider images={TextureImg} slidesToShow={5}/>
          
           <SectionIntro title={dict.MyApp.SectionIntro3.Title}
         className="mt-24 sm:mt-32 lg:mt-40"
@@ -35,7 +37,7 @@ export function MyApp({}) {
       
       </Container >
       <Container className="w-full h-full">
-        <Echarpes/>
+        <ImageSlider images={IMAGES} slidesToShow={5}/>
       </Container>
       
       </FadeIn>
