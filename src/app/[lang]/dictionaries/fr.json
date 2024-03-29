@@ -151,7 +151,8 @@
           "Read": "Lire la suite"
         },
         "Gallery":{
-          "News": "Nouveautés"
+          "News": "Nouveautés",
+          "Gallery":"Notre Galerie"
         },
         "MyApp": {
           "SectionIntro1": {

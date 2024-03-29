@@ -15,7 +15,7 @@ export function Collection() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div className="">
           <SectionIntro
-          title="Our Gallery"
+          title={dict.Gallery.Gallery}
           className="mt-24 sm:mt-32 lg:mt-40"
         >       </SectionIntro>
          </div>

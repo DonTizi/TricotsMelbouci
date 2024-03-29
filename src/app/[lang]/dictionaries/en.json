@@ -158,7 +158,8 @@
 
     },
     "Gallery":{
-      "News": "New Arrivals"
+      "News": "New Arrivals",
+      "Gallery":"Our Gallery"
     },
     "MyApp": {
       "SectionIntro1": {
