@@ -1,11 +1,11 @@
 {
     "Homepage": {
-      "Intro": "In the heart of Montreal, Tricots Melbouci blends the old with the new. Our local artisans pour heart into every piece, celebrating Quebec's legacy of craftsmanship. We choose natural materials and thoughtful methods to make clothes that last and honor Canada's tradition of quality.      "
+      "Intro": "In the heart of Montreal, Tricot Melbouci blends the old with the new. Our local artisans pour heart into every piece, celebrating Quebec's legacy of craftsmanship. We choose natural materials and thoughtful methods to make clothes that last and honor Canada's tradition of quality.      "
     },
 
     "Services":{
       "Title":" Our services.",
-      "Description":"Explore Our Services. Make something special with Tricots Melbouci. Our team is here to help you pick the perfect fabric for a look that's all your own. Start your custom knitwear project with us today."
+      "Description":"Explore Our Services. Make something special with Tricot Melbouci. Our team is here to help you pick the perfect fabric for a look that's all your own. Start your custom knitwear project with us today."
 
     },
     "Clients":{
@@ -78,9 +78,9 @@
         "Description3": "In every stitch and pattern, we embody compassion, crafting each piece with an understanding of our customers' desires and a deep respect for the artisanal textile tradition.",
 
         "Decades":"Decades Legacy of Textile",
-        "Sucesseur": "As the proud successor of Tricots Capraro, a name synonymous with textile craftsmanship for decades, Tricots Melbouci, led by Houria Melbouci, embodies the true spirit of a canadian family-run enterprise.",
-        "commitment":"Our commitment at Tricots Melbouci is to produce high-quality, locally-made knitwear, combining the principles of sustainability and efficiency.",
-        "heritage":"Upholding a rich heritage, we at Tricots Melbouci seamlessly blend traditional expertise with a modern approach to meet contemporary textile needs.",
+        "Sucesseur": "As the proud successor of Tricots Capraro, a name synonymous with textile craftsmanship for decades, Tricot Melbouci, led by Houria Melbouci, embodies the true spirit of a canadian family-run enterprise.",
+        "commitment":"Our commitment at Tricot Melbouci is to produce high-quality, locally-made knitwear, combining the principles of sustainability and efficiency.",
+        "heritage":"Upholding a rich heritage, we at Tricot Melbouci seamlessly blend traditional expertise with a modern approach to meet contemporary textile needs.",
         "members":"Members",
         "blogtitle":"From the blog",
         "blogdescription":"Have a look on our blog, where we weave together stories of artistry, innovation, and the timeless beauty of knitwear, reflecting the essence of our passion for textile craftsmanship."
@@ -105,7 +105,7 @@
       "Blockquote": {
         "Text": "We have a complete catalog for different types of needs and we are very attentive to the quality of our textiles.",
         "Author": "Houria Cheurfi",
-        "Role": "CEO of Tricots Melbouci"
+        "Role": "CEO of Tricot Melbouci"
       },
       "Tags": {
         "Cashmere": "cashmere",
