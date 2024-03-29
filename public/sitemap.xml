@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+    <!-- Accueil -->
+    <url>
+        <loc>https://www.tricotmelbouci.com/fr</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://www.tricotmelbouci.com/en-US</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://www.tricotmelbouci.com/fr/contact</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/contact"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/contact"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.tricotmelbouci.com/en-US/contact</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/contact"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/contact"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Galerie -->
+    <url>
+        <loc>https://www.tricotmelbouci.com/fr/gallery</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/gallery"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/gallery"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.tricotmelbouci.com/en-US/gallery</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/gallery"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/gallery"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- À propos -->
+    <url>
+        <loc>https://www.tricotmelbouci.com/fr/about</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/about"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/about"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.tricotmelbouci.com/en-US/about</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/about"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/about"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Le processus -->
+    <url>
+        <loc>https://www.tricotmelbouci.com/fr/process</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/process"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/process"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.tricotmelbouci.com/en-US/process</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/process"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/process"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Blog -->
+    <url>
+        <loc>https://www.tricotmelbouci.com/fr/blog</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/blog"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/blog"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.tricotmelbouci.com/en-US/blog</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/blog"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/blog"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>https://www.tricotmelbouci.com/fr/work/unseal</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/work/unseal"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/work/unseal"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.tricotmelbouci.com/en-US/work/unseal</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/work/unseal"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/work/unseal"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <!-- Phobia -->
+    <url>
+        <loc>https://www.tricotmelbouci.com/fr/work/phobia</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/work/phobia"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/work/phobia"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.tricotmelbouci.com/en-US/work/phobia</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/work/phobia"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/work/phobia"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <!-- Family Fund -->
+    <url>
+        <loc>https://www.tricotmelbouci.com/fr/work/family-fund</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/work/family-fund"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/work/family-fund"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.tricotmelbouci.com/en-US/work/family-fund</loc>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.tricotmelbouci.com/fr/work/family-fund"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://www.tricotmelbouci.com/en-US/work/family-fund"/>
+        <lastmod>2024-03-29T02:05:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+</urlset>
