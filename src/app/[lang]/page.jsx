@@ -127,7 +127,7 @@ export async function generateMetadata({ params }) {
 
 
 export default async function Home({ params: { lang } }) {
-  let caseStudies = (await loadCaseStudies('en-US')).slice(0, 3)
+  let caseStudies = (await loadCaseStudies(lang)).slice(0, 3)
   const dict = await getDictionary(lang)
 
 
